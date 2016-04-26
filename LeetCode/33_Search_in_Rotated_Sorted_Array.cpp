@@ -1,10 +1,4 @@
-//
-//  33_Search_in_Rotated_Sorted_Array.cpp
-//  OJ
-//
-//  Created by 边永超 on 16/3/9.
-//  Copyright © 2016年 Yangde-Software. All rights reserved.
-//
+
 
 #include <stdio.h>
 #include <vector>

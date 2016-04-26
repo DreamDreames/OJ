@@ -1,10 +1,4 @@
-//
-//  32_Longest_Valid_Parentheses.cpp
-//  OJ
-//
-//  Created by 边永超 on 16/3/8.
-//  Copyright © 2016年 Yangde-Software. All rights reserved.
-//
+
 
 #include <stdio.h>
 #include <string>
