@@ -1,6 +1,8 @@
+#include "stdafx.h"
 #include <stdio.h>
 #include <vector>
 #include "gtest/gtest.h"
+
 
 using namespace std;
 /*
