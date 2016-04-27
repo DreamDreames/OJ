@@ -128,5 +128,8 @@
     <ClCompile Include="LongestValidParentheses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="34_Search_for_a_Range.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
