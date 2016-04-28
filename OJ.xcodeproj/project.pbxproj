@@ -15,6 +15,7 @@
 		8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */; };
 		8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */; };
 		8D1CFF7F1CD26AB4007D100B /* 36_Valid_Sudoku.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7E1CD26AB4007D100B /* 36_Valid_Sudoku.cpp */; };
+		8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF801CD27873007D100B /* 37_Sudoku_Solver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 34_Search_for_a_Range.cpp; path = LeetCode/34_Search_for_a_Range.cpp; sourceTree = "<group>"; };
 		8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 35_Search_Insert_Position.cpp; path = LeetCode/35_Search_Insert_Position.cpp; sourceTree = "<group>"; };
 		8D1CFF7E1CD26AB4007D100B /* 36_Valid_Sudoku.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 36_Valid_Sudoku.cpp; path = LeetCode/36_Valid_Sudoku.cpp; sourceTree = "<group>"; };
+		8D1CFF801CD27873007D100B /* 37_Sudoku_Solver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 37_Sudoku_Solver.cpp; path = LeetCode/37_Sudoku_Solver.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */,
 				8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */,
 				8D1CFF7E1CD26AB4007D100B /* 36_Valid_Sudoku.cpp */,
+				8D1CFF801CD27873007D100B /* 37_Sudoku_Solver.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */,
 				8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */,
 				8D1CFF7F1CD26AB4007D100B /* 36_Valid_Sudoku.cpp in Sources */,
+				8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
