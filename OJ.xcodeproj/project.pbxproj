@@ -13,6 +13,7 @@
 		8D07159A1C8F38090011B820 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0715971C8F37840011B820 /* gtest.framework */; };
 		8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF781CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp */; };
 		8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */; };
+		8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		8D0715971C8F37840011B820 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gtest.framework; sourceTree = "<group>"; };
 		8D1CFF781CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 10_Regular_Expression_Matching.cpp; path = LeetCode/10_Regular_Expression_Matching.cpp; sourceTree = "<group>"; };
 		8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 34_Search_for_a_Range.cpp; path = LeetCode/34_Search_for_a_Range.cpp; sourceTree = "<group>"; };
+		8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 35_Search_Insert_Position.cpp; path = LeetCode/35_Search_Insert_Position.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				8D1CFF781CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp */,
 				8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */,
+				8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */,
+				8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
