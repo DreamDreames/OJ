@@ -15,100 +15,60 @@ using namespace std;
 */
 
 namespace LeetCode {
-    struct point{
-        point(int x, int y, int number): x(x), y(y), number(number) {
-            
-        }
-        int x;
-        int y;
-        int number;
-    };
     class Solution {
     public:
         void solveSudoku(vector<vector<char>>& board) {
-            int i, j;
-            vector<vector<set<int>>> records;
-            stack<point> stk;
-            
-            set<int> all;
-            for(i = 1; i < 10; ++ i){
-                all.insert(i);
-            }
-            for(i = 0; i < board.size(); ++ i){
-                vector<set<int>> row;
-                for(j = 0; j < board[i].size(); ++ j){
-                    row.push_back(all);
-                }
-                records.push_back(row);
-            }
-            for(i = 0; i < board.size(); ++ i){
-                auto &row = board[i];
-                for(j = 0; j < row.size(); ++ j){
-                    if(row[j] == '.')
-                        continue;
-                    int number = row[j] - '0';
-                    records[i][j].clear();
-                    records[i][j].insert(number);
-                    stk.push( {i, j, number});
-                }
-            }
-            
-            clear(records, stk);
-            
-            for(i = 0; i < board.size(); ++ i){
-                auto &row = board[i];
-                for(j = 0; j < row.size(); ++ j){
-//                    if(records[i][j].size() != 1){
-//                        cout << "x: " <<  i << " y: " << j << " count: " << records[i][j].size() << endl;
-//                    }
-                    board[i][j] = *(records[i][j].begin()) + '0';
-                }
-            }
-        }
-    private:
-        void clear(vector<vector<set<int>>>& records, stack<point>& stk){
-            int i, j;
-            while(!stk.empty()){
-                auto p = stk.top();
-                
-                for(i = 0; i < records.size(); ++ i){
-                    if(i == p.x)
-                        continue;
-                    auto &temp = records[i][p.y];
-                    removeNumber(temp, p.number, i, p.y, stk);
-                   
-                }
-                
-                for(j = 0; j < records[p.x].size(); ++ j){
-                    if(j == p.y)
-                        continue;
-                    auto& temp = records[p.x][j];
-                    
-                    removeNumber(temp, p.number, p.x, j, stk);
-                }
-                
-                int ax = p.x / 3, ay = p.y /3;
-                for(i = ax * 3; i < ax * 3 + 3; ++ i){
-                    for(j = ay * 3; j < ay * 3 + 3; ++ j){
-                        if(i == p.x && j == p.y)
-                            continue;
-                        auto& temp = records[i][j];
-                        removeNumber(temp, p.number, i, j, stk);
-                    }
-                }
-                
-                stk.pop();
-            }
+            solve(board);
         }
         
-        void removeNumber(set<int>& set, int number, int i, int j, stack<point>& stk){
-            auto f = set.find(number);
-            if(f == set.end())
-                return;
-            set.erase(f);
-            if(set.size() == 1)
-                stk.push(point(i, j, *(set.begin())));
-            return;
+        bool solve(vector<vector<char>>& board) {
+            int i, j, t;
+            for(i = 0; i < board.size(); ++ i){
+                auto &row = board[i];
+                for(j = 0; j < row.size(); ++ j){
+                    if(row[j] != '.')
+                        continue;
+                    for(t = 1; t <= 9; ++ t){
+                        board[i][j] = t + '0';
+                        if(isValidSudoku(board, i, j) && solve(board))
+                            return true;
+                        
+                        board[i][j] = '.';
+                    }
+                    return false;
+                }
+            }
+            return true;
+        }
+    private:
+        
+        bool isValidSudoku(vector<vector<char>>& board, int x, int y) {
+            auto ch = board[x][y];
+            int i, j;
+            for(i = 0; i < board.size(); ++ i){
+                if( i == x)
+                    continue;
+                if( board[i][y] == ch)
+                    return false;
+            }
+            
+            for( j = 0; j < board[x].size(); ++ j){
+                if(j == y)
+                    continue;
+                if(board[x][j] == ch)
+                    return false;
+            }
+            
+            int ax = x / 3, ay = y / 3;
+            for(i = ax * 3; i < ax * 3 + 3; ++ i){
+                for(j = ay * 3; j < ay * 3 + 3; ++ j){
+                    if(i == x && j == y)
+                        continue;
+                    if(board[i][j] == ch)
+                        return false;
+                }
+            }
+            return true;
         }
     };
     
