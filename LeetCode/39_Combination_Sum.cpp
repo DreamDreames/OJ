@@ -58,16 +58,11 @@ class helper{
         void test(vector<int> candidates, int target, vector<vector<int>> expected){
             Solution sln;
             auto actual = sln.combinationSum(candidates, target);
-            for(auto &result: actual){
-                for(auto r: result)
-                    cout << r << ", ";
-                cout << endl;
-            }
             ASSERT_EQ(expected.size(), actual.size());
         }
     };
     
-    TEST(CombinationSUm, combinationSum){
+    TEST(CombinationSum, combinationSum){
         helper h;
         h.test({2, 3, 6, 7}, 7, {{7}, {2, 2, 3}});
         h.test({8, 7, 4, 3}, 11, {{3, 4, 4}, {3, 8}, {4, 7}});
