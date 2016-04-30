@@ -17,6 +17,7 @@
 		8D1CFF7F1CD26AB4007D100B /* 36_Valid_Sudoku.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7E1CD26AB4007D100B /* 36_Valid_Sudoku.cpp */; };
 		8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF801CD27873007D100B /* 37_Sudoku_Solver.cpp */; };
 		8D1CFF831CD450CD007D100B /* 38_Count_and_Say.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF821CD450CD007D100B /* 38_Count_and_Say.cpp */; };
+		8D1CFF851CD45A85007D100B /* 39_Combination_Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF841CD45A85007D100B /* 39_Combination_Sum.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		8D1CFF7E1CD26AB4007D100B /* 36_Valid_Sudoku.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 36_Valid_Sudoku.cpp; path = LeetCode/36_Valid_Sudoku.cpp; sourceTree = "<group>"; };
 		8D1CFF801CD27873007D100B /* 37_Sudoku_Solver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 37_Sudoku_Solver.cpp; path = LeetCode/37_Sudoku_Solver.cpp; sourceTree = "<group>"; };
 		8D1CFF821CD450CD007D100B /* 38_Count_and_Say.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 38_Count_and_Say.cpp; path = LeetCode/38_Count_and_Say.cpp; sourceTree = "<group>"; };
+		8D1CFF841CD45A85007D100B /* 39_Combination_Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 39_Combination_Sum.cpp; path = LeetCode/39_Combination_Sum.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				8D1CFF7E1CD26AB4007D100B /* 36_Valid_Sudoku.cpp */,
 				8D1CFF801CD27873007D100B /* 37_Sudoku_Solver.cpp */,
 				8D1CFF821CD450CD007D100B /* 38_Count_and_Say.cpp */,
+				8D1CFF841CD45A85007D100B /* 39_Combination_Sum.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				8D1CFF831CD450CD007D100B /* 38_Count_and_Say.cpp in Sources */,
 				8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */,
 				8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */,
+				8D1CFF851CD45A85007D100B /* 39_Combination_Sum.cpp in Sources */,
 				8D1CFF7F1CD26AB4007D100B /* 36_Valid_Sudoku.cpp in Sources */,
 				8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
