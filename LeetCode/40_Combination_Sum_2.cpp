@@ -59,12 +59,6 @@ class helper2{
         void test(vector<int> candidates, int target, vector<vector<int>> expected){
             Solution sln;
             auto actual = sln.combinationSum2(candidates, target);
-            for(auto &result: actual){
-                for(auto r: result)
-                    cout << r << ", ";
-                cout << endl;
-            }
-            cout << "done" << endl;
             ASSERT_EQ(expected.size(), actual.size());
         }
     };
