@@ -28,33 +28,29 @@ namespace LeetCode {
         vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
             _size = (int)candidates.size();
             std::sort(candidates.begin(), candidates.end());
-            return combination2(candidates, 0, target);
-        }
-    private:
-        vector<vector<int>> combination2(vector<int>& candidates, int start, int target){
             vector<vector<int>> ans;
-            for(int i = start; i < _size && candidates[i] <= target; ++ i){
-                int rest = target - candidates[i];
-                if(rest < 0)
-                    continue;
-                if(rest == 0)
-                    ans.push_back({candidates[i]});
-                else {
-                    auto temp = combination2(candidates, i + 1, rest);
-                    if(temp.size() == 0)
-                        continue;
-                    for(auto& r: temp){
-                        vector<int> result = {candidates[i]};
-                        result.insert(result.end(), r.begin(), r.end());
-                        ans.push_back(result);
-                    }
-                }
-                while(i < _size && candidates[i] == candidates[i + 1])
-                    ++ i;
-            }
+            vector<int> result;
+            combination2(candidates, 0, target, result, ans);
             return ans;
         }
-
+    private:
+        void combination2(vector<int>& candidates, int start, int target, vector<int>& result, vector<vector<int>>& ans){
+            for(int i = start; i < _size; ++ i){
+                int rest = target - candidates[i];
+                if(rest < 0)
+                    return;
+                result.push_back(candidates[i]);
+                if(rest == 0){
+                    ans.push_back(result);
+                    result.pop_back();
+                    return;
+                }
+                combination2(candidates, i + 1, rest, result, ans);
+                result.pop_back();
+                while(i < _size - 1 && candidates[i] == candidates[i + 1])
+                    ++ i;
+            }
+        }
     private:
         int _size;
     };
@@ -68,6 +64,7 @@ class helper2{
                     cout << r << ", ";
                 cout << endl;
             }
+            cout << "done" << endl;
             ASSERT_EQ(expected.size(), actual.size());
         }
     };
@@ -77,4 +74,5 @@ class helper2{
         h.test({10,1,2,7,6,1,5}, 8, {{1, 7}, {1, 2, 5}, {2, 6}, {1, 1, 6}});
         h.test({2,2,2}, 4, {{2, 2}});
         h.test({1, 1}, 1, {{1}});
+        h.test({1, 2}, 3, {{1, 2}});
     }}
