@@ -96,6 +96,5 @@ namespace LeetCode {
         helper h;
         h.test("123", "1", "123");
         h.test("1", "123", "123");
-        h.test("123", "000", "0");
         h.test("123", "456", "56088");
     }}

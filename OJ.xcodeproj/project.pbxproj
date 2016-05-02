@@ -22,6 +22,7 @@
 		8D1CFF891CD48335007D100B /* 41_First_Missing_Positive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF881CD48335007D100B /* 41_First_Missing_Positive.cpp */; };
 		8D1CFF8B1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF8A1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp */; };
 		8D1CFF8D1CD79490007D100B /* 43_Multiply_Strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF8C1CD79490007D100B /* 43_Multiply_Strings.cpp */; };
+		8D1CFF8F1CD7A5FE007D100B /* 44_Wildcard_Maching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF8E1CD7A5FE007D100B /* 44_Wildcard_Maching.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		8D1CFF881CD48335007D100B /* 41_First_Missing_Positive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 41_First_Missing_Positive.cpp; path = LeetCode/41_First_Missing_Positive.cpp; sourceTree = "<group>"; };
 		8D1CFF8A1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 42_Trapping_Rain_Water.cpp; path = LeetCode/42_Trapping_Rain_Water.cpp; sourceTree = "<group>"; };
 		8D1CFF8C1CD79490007D100B /* 43_Multiply_Strings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 43_Multiply_Strings.cpp; path = LeetCode/43_Multiply_Strings.cpp; sourceTree = "<group>"; };
+		8D1CFF8E1CD7A5FE007D100B /* 44_Wildcard_Maching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 44_Wildcard_Maching.cpp; path = LeetCode/44_Wildcard_Maching.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				8D1CFF881CD48335007D100B /* 41_First_Missing_Positive.cpp */,
 				8D1CFF8A1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp */,
 				8D1CFF8C1CD79490007D100B /* 43_Multiply_Strings.cpp */,
+				8D1CFF8E1CD7A5FE007D100B /* 44_Wildcard_Maching.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				8D1CFF831CD450CD007D100B /* 38_Count_and_Say.cpp in Sources */,
 				8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */,
 				8D1CFF8B1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp in Sources */,
+				8D1CFF8F1CD7A5FE007D100B /* 44_Wildcard_Maching.cpp in Sources */,
 				8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */,
 				8D1CFF891CD48335007D100B /* 41_First_Missing_Positive.cpp in Sources */,
 				8D1CFF851CD45A85007D100B /* 39_Combination_Sum.cpp in Sources */,
