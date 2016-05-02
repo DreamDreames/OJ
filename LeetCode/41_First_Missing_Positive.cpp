@@ -48,5 +48,6 @@ namespace LeetCode {
         h.test({1, 2, 0}, 3);
         h.test({3, 4, -1, 1}, 2);
         h.test({1, 1}, 2);
+        h.test({1}, 2);
     }
 }
