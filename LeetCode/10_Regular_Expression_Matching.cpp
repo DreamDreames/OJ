@@ -5,7 +5,7 @@
 
 using namespace std;
 
-namespace LeetCode
+namespace RegularExpressionMatching
 {
     class Solution {
     private:

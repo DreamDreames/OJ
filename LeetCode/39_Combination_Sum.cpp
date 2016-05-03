@@ -19,7 +19,7 @@ using namespace std;
  [2, 2, 3]
 */
 
-namespace LeetCode {
+namespace CombinationSum {
     
     class Solution {
     public:

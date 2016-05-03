@@ -14,7 +14,7 @@ using namespace std;
  You may assume that there will be only one unique solution.
 */
 
-namespace LeetCode {
+namespace SudokuSolver {
     class Solution {
     public:
         void solveSudoku(vector<vector<char>>& board) {

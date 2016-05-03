@@ -16,7 +16,7 @@ using namespace std;
  [1,3,5,6], 0 → 0
 */
 
-namespace LeetCode {
+namespace SearchInsertPosition {
     class Solution {
     private:
         int _size;

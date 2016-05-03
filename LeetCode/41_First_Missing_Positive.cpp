@@ -14,7 +14,7 @@ using namespace std;
  Your algorithm should run in O(n) time and uses constant space.
 */
 
-namespace LeetCode {
+namespace FirstMissingPositive {
     class Solution {
     public:
         int firstMissingPositive(vector<int>& nums) {

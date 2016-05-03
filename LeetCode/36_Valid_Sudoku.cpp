@@ -15,7 +15,7 @@ using namespace std;
  
 */
 
-namespace LeetCode {
+namespace ValidSudoku {
     class Solution {
     public:
         bool isValidSudoku(vector<vector<char>>& board) {
