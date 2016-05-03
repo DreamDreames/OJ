@@ -21,7 +21,7 @@ A solution set is:
 [1, 1, 6]
 */
 
-namespace LeetCode {
+namespace CombinationSum2 {
     
     class Solution {
     public:

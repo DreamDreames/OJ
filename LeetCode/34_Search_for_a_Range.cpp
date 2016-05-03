@@ -16,7 +16,7 @@ using namespace std;
  return [3, 4].
 */
 
-namespace LeetCode {
+namespace SearchForaRange {
     class Solution {
     public:
         vector<int> searchRange(vector<int>& nums, int target) {

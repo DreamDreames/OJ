@@ -15,7 +15,7 @@ using namespace std;
  Note: The sequence of integers will be represented as a string.
 */
 
-namespace LeetCode {
+namespace CountAndSay {
     class Solution {
     public:
         string countAndSay(int n) {

@@ -14,7 +14,7 @@ using namespace std;
  You should NOT use internal library such as BigInteger.
 */
 
-namespace LeetCode {
+namespace MultiplyString {
    
     class Solution {
     public:
