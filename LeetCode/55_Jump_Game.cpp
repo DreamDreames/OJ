@@ -21,32 +21,14 @@ namespace JumpGame {
     class Solution {
     public:
         bool canJump(vector<int>& nums) {
-            vector<int> max;
-            bool reachable = false;
-            for(int i = 0; i < nums.size(); ++ i){
-                int temp = i + nums[i];
-                if(temp >= nums.size() - 1)
-                    reachable = true;
-                max.push_back(temp);
-            }
-            if(!reachable)
-                return false;
-            
-            int i = 0;
-            while(i < nums.size() - 1){
-                int current = max[i];
-                int longest = current;
-                for(int j = i; j <= current; ++ j){
-                    if(longest < max[j]){
-                        longest = max[j];
-                        i = j;
-                    }
-                }
-                if(longest >= nums.size() - 1)
-                    return true;
-                if(longest == current)
+            int max = nums[0];
+            int end = (int)nums.size() - 1;
+            for(int i = 1; i <= end && max <= end; ++ i){
+                if(i > max)
                     return false;
-                    
+                if(nums[i] + i > max){
+                    max = nums[i] + i;
+                }
             }
             return true;
         }
