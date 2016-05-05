@@ -31,8 +31,7 @@ namespace Permutations2 {
                     swap(p[j - 1], p[j]);
                     ans.push_back(p);
                 }
-                if(j < i)
-                    i ++;
+              
             }
             return ans;
         }
@@ -56,5 +55,6 @@ namespace Permutations2 {
         helper h;
         h.test({1, 1, 2}, {{1, 1, 2},{1, 2, 1},{2, 1, 1}});
         h.test({1, 2}, {{1, 2},{2, 1}});
+        h.test({1, 1, 2, 2}, {{1, 1, 2, 2},{1, 2, 1, 2}, {1, 2, 2, 1}, {2, 1, 2, 1}, {2, 2, 1, 1}});
     }
 }
