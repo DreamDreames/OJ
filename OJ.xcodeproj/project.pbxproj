@@ -26,6 +26,7 @@
 		8D1CFF911CD8ED23007D100B /* 55_Jump_Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF901CD8ED23007D100B /* 55_Jump_Game.cpp */; };
 		8D1CFF931CDA43A5007D100B /* 45_Jump_Game_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF921CDA43A5007D100B /* 45_Jump_Game_2.cpp */; };
 		8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */; };
+		8D1CFF971CDB9D03007D100B /* 47_Permutations_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,7 @@
 		8D1CFF901CD8ED23007D100B /* 55_Jump_Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 55_Jump_Game.cpp; path = LeetCode/55_Jump_Game.cpp; sourceTree = "<group>"; };
 		8D1CFF921CDA43A5007D100B /* 45_Jump_Game_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 45_Jump_Game_2.cpp; path = LeetCode/45_Jump_Game_2.cpp; sourceTree = "<group>"; };
 		8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 46_Permutations.cpp; path = LeetCode/46_Permutations.cpp; sourceTree = "<group>"; };
+		8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 47_Permutations_2.cpp; path = LeetCode/47_Permutations_2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				8D1CFF901CD8ED23007D100B /* 55_Jump_Game.cpp */,
 				8D1CFF921CDA43A5007D100B /* 45_Jump_Game_2.cpp */,
 				8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */,
+				8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				8D1CFF911CD8ED23007D100B /* 55_Jump_Game.cpp in Sources */,
 				8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */,
 				8D1CFF7F1CD26AB4007D100B /* 36_Valid_Sudoku.cpp in Sources */,
+				8D1CFF971CDB9D03007D100B /* 47_Permutations_2.cpp in Sources */,
 				8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */,
 				8D1CFF8D1CD79490007D100B /* 43_Multiply_Strings.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
