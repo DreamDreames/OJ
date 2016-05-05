@@ -44,19 +44,18 @@ namespace Permutations {
         void test(vector<int> nums, vector<vector<int>> expected){
             Solution sln;
             auto ans = sln.permute(nums);
-            for(auto &p : ans){
-                for(auto number: p){
-                    cout << number << " ";
-                }
-                cout << endl;
-            }
+//            for(auto &p : ans){
+//                for(auto number: p){
+//                    cout << number << " ";
+//                }
+//                cout << endl;
+//            }
             ASSERT_EQ(expected.size(), ans.size());
         }
         
     };
     TEST(Permutations, permute){
         helper h;
-        //h.test({1, 2, 3}, {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, {3, 2, 1}});
-        h.test({0, -1, 1}, {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, {3, 2, 1}});
+        h.test({1, 2, 3}, {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, {3, 2, 1}});
     }
 }
