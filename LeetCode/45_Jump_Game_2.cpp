@@ -25,27 +25,28 @@ namespace JumpGame2 {
     public:
         int jump(vector<int>& nums) {
             if(nums.size() <= 1)
-                return 0;
+                return  0;
             int i, max = nums[0], pivot = max;
             int end = (int)nums.size() - 1;
-            if(max >= end)
-                return 1;
             int steps = 0;
-            for(i = 1; i < end ;  ++ i){
+            for(i =  0; i < end ;  ++ i){
                 if(i == pivot){
                     steps ++;
+                    if(max >= end){
+                        steps ++;
+                        return steps;
+                    }
                     pivot = max;
                 }
                 if(nums[i] + i > max){
                     max = nums[i] + i;
-                    if(max >= end){
-                        steps ++;
-                        break;
-                    }
                 }
             }
-            if(i < pivot)
+            if(i == end){
                 steps ++;
+                if(i == pivot)
+                    steps ++;
+            }
             return steps;
         }
     };
@@ -58,11 +59,12 @@ namespace JumpGame2 {
         }
     };
     TEST(JumpGame2, jump){
-        helper h;
-        h.test({2, 3, 1, 1, 4}, 2);
-        h.test({2}, 0);
-        h.test({2, 0}, 1);
-        h.test({1, 2}, 1);
-        h.test({1, 2, 3}, 2);
+//        helper h;
+//        h.test({2, 3, 1, 1, 4}, 2);
+//        h.test({2}, 0);
+//        h.test({2, 0}, 1);
+//        h.test({1, 2}, 1);
+//        h.test({1, 2, 3}, 2);
+//        h.test({1, 1, 1, 1}, 3);
     }
 }

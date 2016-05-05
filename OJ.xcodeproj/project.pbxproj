@@ -25,6 +25,7 @@
 		8D1CFF8F1CD7A5FE007D100B /* 44_Wildcard_Matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF8E1CD7A5FE007D100B /* 44_Wildcard_Matching.cpp */; };
 		8D1CFF911CD8ED23007D100B /* 55_Jump_Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF901CD8ED23007D100B /* 55_Jump_Game.cpp */; };
 		8D1CFF931CDA43A5007D100B /* 45_Jump_Game_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF921CDA43A5007D100B /* 45_Jump_Game_2.cpp */; };
+		8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,7 @@
 		8D1CFF8E1CD7A5FE007D100B /* 44_Wildcard_Matching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 44_Wildcard_Matching.cpp; path = LeetCode/44_Wildcard_Matching.cpp; sourceTree = "<group>"; };
 		8D1CFF901CD8ED23007D100B /* 55_Jump_Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 55_Jump_Game.cpp; path = LeetCode/55_Jump_Game.cpp; sourceTree = "<group>"; };
 		8D1CFF921CDA43A5007D100B /* 45_Jump_Game_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 45_Jump_Game_2.cpp; path = LeetCode/45_Jump_Game_2.cpp; sourceTree = "<group>"; };
+		8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 46_Permutations.cpp; path = LeetCode/46_Permutations.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				8D1CFF8E1CD7A5FE007D100B /* 44_Wildcard_Matching.cpp */,
 				8D1CFF901CD8ED23007D100B /* 55_Jump_Game.cpp */,
 				8D1CFF921CDA43A5007D100B /* 45_Jump_Game_2.cpp */,
+				8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				8D1CFF851CD45A85007D100B /* 39_Combination_Sum.cpp in Sources */,
 				8D1CFF871CD46E1F007D100B /* 40_Combination_Sum_2.cpp in Sources */,
 				8D1CFF911CD8ED23007D100B /* 55_Jump_Game.cpp in Sources */,
+				8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */,
 				8D1CFF7F1CD26AB4007D100B /* 36_Valid_Sudoku.cpp in Sources */,
 				8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */,
 				8D1CFF8D1CD79490007D100B /* 43_Multiply_Strings.cpp in Sources */,
