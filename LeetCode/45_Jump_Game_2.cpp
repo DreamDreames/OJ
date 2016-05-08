@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <vector>
+#include <map>
 #include "gtest/gtest.h"
 
 using namespace std;
@@ -24,30 +25,29 @@ namespace JumpGame2 {
     class Solution {
     public:
         int jump(vector<int>& nums) {
-            if(nums.size() <= 1)
-                return  0;
-            int i, max = nums[0], pivot = max;
-            int end = (int)nums.size() - 1;
-            int steps = 0;
-            for(i =  0; i < end ;  ++ i){
-                if(i == pivot){
-                    steps ++;
-                    if(max >= end){
-                        steps ++;
-                        return steps;
-                    }
-                    pivot = max;
-                }
-                if(nums[i] + i > max){
-                    max = nums[i] + i;
-                }
+            map<int,int> records;
+            return dp(nums, 0, records);
+        }
+    private:
+        int dp(vector<int>& nums, int src, map<int, int>& records){
+            if(records.find(src) != records.end())
+                return records[src];
+            
+            if(src >= nums.size() - 1)
+                return 0;
+                
+            int step = nums[src] + src;
+            if(step >= nums.size() - 1)
+                return 1;
+            
+            int min = (int)nums.size();
+            for(int i = step; i > src; -- i){
+                int temp = dp(nums, i, records);
+                if(temp < min)
+                    min = temp;
             }
-            if(i == end){
-                steps ++;
-                if(i == pivot)
-                    steps ++;
-            }
-            return steps;
+            records[src] = min + 1;
+            return records[src];
         }
     };
     class helper{
@@ -59,12 +59,12 @@ namespace JumpGame2 {
         }
     };
     TEST(JumpGame2, jump){
-//        helper h;
-//        h.test({2, 3, 1, 1, 4}, 2);
-//        h.test({2}, 0);
-//        h.test({2, 0}, 1);
-//        h.test({1, 2}, 1);
-//        h.test({1, 2, 3}, 2);
-//        h.test({1, 1, 1, 1}, 3);
+        helper h;
+        h.test({2, 3, 1, 1, 4}, 2);
+        h.test({2}, 0);
+        h.test({2, 0}, 1);
+        h.test({1, 2}, 1);
+        h.test({1, 2, 3}, 2);
+        h.test({1, 1, 1, 1}, 3);
     }
 }
