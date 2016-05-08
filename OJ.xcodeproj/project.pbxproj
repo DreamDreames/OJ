@@ -91,12 +91,12 @@
 		8D07156F1C8F1BC20011B820 = {
 			isa = PBXGroup;
 			children = (
-				8D07159E1C9EE33F0011B820 /* HackerRank */,
-				8D0715971C8F37840011B820 /* gtest.framework */,
 				8D0715841C8F22E70011B820 /* src */,
+				8D0715971C8F37840011B820 /* gtest.framework */,
+				8D07159E1C9EE33F0011B820 /* HackerRank */,
 				8D07157F1C8F1C3F0011B820 /* LeetCode */,
-				8D07158D1C8F2A5D0011B820 /* Tests */,
 				8D0715791C8F1BC30011B820 /* Products */,
+				8D07158D1C8F2A5D0011B820 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -353,10 +353,10 @@
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/googletest",
 					"$(PROJECT_DIR)/googletest/googletest",
 					"$(PROJECT_DIR)/googletest/googletest/include",
-					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -372,10 +372,10 @@
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/googletest",
 					"$(PROJECT_DIR)/googletest/googletest",
 					"$(PROJECT_DIR)/googletest/googletest/include",
-					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -388,8 +388,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/googletest",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/googletest",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/googletest $(PROJECT_DIR)/googletest/googletest/include";
@@ -401,8 +401,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/googletest",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/googletest",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/googletest $(PROJECT_DIR)/googletest/googletest/include";
