@@ -50,12 +50,6 @@ namespace Permutations2 {
         void test(vector<int> nums, vector<vector<int>> expected){
             Solution sln;
             auto ans = sln.permuteUnique(nums);
-            for(auto &p : ans){
-                for(auto number: p){
-                    cout << number << " ";
-                }
-                cout << endl;
-            }
             ASSERT_EQ(expected.size(), ans.size());
         }
         
