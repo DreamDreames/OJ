@@ -17,23 +17,32 @@ namespace Permutations2 {
     public:
         vector<vector<int>> permuteUnique(vector<int>& nums) {
             sort(nums.begin(), nums.end());
+            vector<int> per;
             vector<vector<int>> ans;
-            ans.push_back(nums);
-            vector<int> p = nums;
-            int i, j;
-            for(i = 1; i < p.size(); ++ i){
-                if(p[i] == p[i - 1]){
-                    continue;
-                }
-                for(j = i; j >= 1; -- j){
-                    if(p[j] == p[j - 1])
-                        break;
-                    swap(p[j - 1], p[j]);
-                    ans.push_back(p);
-                }
-              
-            }
+            vector<bool> status(nums.size(), false);
+            iter(nums, status, per, ans);
             return ans;
+        }
+    private:
+        void iter(vector<int>&nums, vector<bool>& status, vector<int>& per, vector<vector<int>>& ans){
+            if(per.size() == nums.size()){
+                ans.push_back(per);
+                return;
+            }
+                
+            for(int i = 0; i < nums.size(); ++ i){
+                if(status[i])
+                    continue;
+                
+                if(i > 0 && nums[i] == nums[i - 1] && !status[i - 1])
+                    continue;
+                
+                status[i] = true;
+                per.push_back(nums[i]);
+                iter(nums, status, per, ans);
+                per.pop_back();
+                status[i] = false;
+            }
         }
     };
     class helper {
@@ -55,7 +64,8 @@ namespace Permutations2 {
         helper h;
         h.test({1, 1, 2}, {{1, 1, 2},{1, 2, 1},{2, 1, 1}});
         h.test({1, 2}, {{1, 2},{2, 1}});
-        h.test({1, 1, 2, 2}, {{1, 1, 2, 2},{1, 2, 1, 2}, {1, 2, 2, 1}, {2, 1, 2, 1}, {2, 2, 1, 1}});
+        h.test({1, 1, 2, 2}, {{1, 1, 2, 2},{1, 2, 1, 2}, {1, 2, 2, 1}, {2, 1, 2, 1}, {2, 1, 1, 2}, {2, 2, 1, 1}});
         h.test({1, 2, 3}, {{1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2}, {3, 2, 1}});
+        h.test({2, 2, 1, 1}, {{1,1,2,2},{1,2,1,2},{1,2,2,1},{2,1,1,2},{2,1,2,1},{2,2,1,1}});
     }
 }
