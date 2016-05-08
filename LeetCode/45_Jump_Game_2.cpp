@@ -45,6 +45,8 @@ namespace JumpGame2 {
                 int temp = dp(nums, i, records);
                 if(temp < min)
                     min = temp;
+                if(min <= 1)
+                    break;
             }
             records[src] = min + 1;
             return records[src];
