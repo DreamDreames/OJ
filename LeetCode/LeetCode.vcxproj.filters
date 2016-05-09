@@ -128,7 +128,7 @@
     <ClCompile Include="LongestValidParentheses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="44_Wildcard_Matching.cpp">
+    <ClCompile Include="48_Rotate_Image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
