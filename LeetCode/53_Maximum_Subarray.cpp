@@ -17,30 +17,25 @@ namespace MaximumSubarray {
     class Solution {
     public:
         int maxSubArray(vector<int>& nums) {
-            int lastPostive = -1, currentSum = 0;
-            int max = nums[0];
-            for(int i = 1; i < nums.size(); ++ i){
-                if(max < nums[i])
-                    max = nums[i];
-            }
-            
+            int currentSum = 0;
+            int ans = nums[0];
             for(int i = 0; i < nums.size(); ++ i){
                 if(nums[i] > 0){
                     if(currentSum >= 0)
                         currentSum += nums[i];
-                    else{
+                    else
                         currentSum = nums[i];
-                    }
-                    if(max < currentSum){
-                        max = currentSum;
-                    }
-                    lastPostive = i;
+                    
+                    if(ans < currentSum)
+                        ans = currentSum;
                 }
                 else{
                     currentSum += nums[i];
+                    if(ans < nums[i])
+                        ans = nums[i];
                 }
             }
-            return max;
+            return ans;
         }
     };
     class helper{
