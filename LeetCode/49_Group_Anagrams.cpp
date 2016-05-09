@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include <string>
 #include <vector>
-#include <map>
+#include <unordered_map>
 #include <set>
 #include <algorithm>
 
@@ -25,27 +25,15 @@ namespace GroupAnagrams {
 	class Solution {
 	public:
 		vector<vector<string>> groupAnagrams(vector<string>& strs) {
-			map<string, multiset<string>> collection;
+			unordered_map<string, multiset<string>> collection;
 			for (auto& str : strs) {
 				string copy = str;
 				sort(copy.begin(), copy.end());
-				auto iter = collection.find(copy);
-				if (iter == collection.end()) {
-					multiset<string> temp{ str };
-					collection[copy] = temp;
-				}
-				else {
-					iter->second.insert(str);
-				}
+				collection[copy].insert(str);
 			}
 			vector<vector<string>> ans;
 			for (auto &iter : collection) {
-				auto & result = iter.second;
-				vector<string> temp;
-				for (auto& str : result) {
-					temp.push_back(move(str));
-				}
-				ans.push_back(move(temp));
+				ans.push_back(vector<string>(iter.second.begin(), iter.second.end()));
 			}
 			return ans;
 		}
