@@ -28,6 +28,7 @@
 		8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */; };
 		8D1CFF971CDB9D03007D100B /* 47_Permutations_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */; };
 		8D30BCA11CE0AD2900F79D18 /* 51_N_Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */; };
+		8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */; };
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 46_Permutations.cpp; path = LeetCode/46_Permutations.cpp; sourceTree = "<group>"; };
 		8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 47_Permutations_2.cpp; path = LeetCode/47_Permutations_2.cpp; sourceTree = "<group>"; };
 		8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 51_N_Queens.cpp; path = LeetCode/51_N_Queens.cpp; sourceTree = "<group>"; };
+		8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 52_N_Queens_2.cpp; path = LeetCode/52_N_Queens_2.cpp; sourceTree = "<group>"; };
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 				8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */,
 				8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */,
 				8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */,
+				8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */,
 				8D1CFF8D1CD79490007D100B /* 43_Multiply_Strings.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
+				8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
