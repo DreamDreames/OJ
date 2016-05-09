@@ -18,22 +18,14 @@ namespace MaximumSubarray {
     public:
         int maxSubArray(vector<int>& nums) {
             int currentSum = 0;
-            int ans = nums[0];
+            int ans = INT_MIN;
             for(int i = 0; i < nums.size(); ++ i){
-                if(nums[i] > 0){
-                    if(currentSum >= 0)
-                        currentSum += nums[i];
-                    else
-                        currentSum = nums[i];
-                    
-                    if(ans < currentSum)
-                        ans = currentSum;
-                }
-                else{
-                    currentSum += nums[i];
-                    if(ans < nums[i])
-                        ans = nums[i];
-                }
+                currentSum += nums[i];
+                if(currentSum > ans)
+                    ans = currentSum;
+                
+                if(currentSum < 0)
+                    currentSum = 0;
             }
             return ans;
         }
