@@ -8,41 +8,31 @@ namespace NQueens2 {
     class Solution {
     public:
         int totalNQueens(int n) {
-            vector<string> status(n, string(n, '.'));
             vector<pair<int,int>> occupied;
             int ans = 0;
-            solve(status, occupied, n, 0, ans);
+            solve(occupied, n, 0, ans);
             return ans;
         }
     private:
-        void solve(vector<string>& status, vector<pair<int,int>>& occupied, int n, int row, int& ans){
+        void solve(vector<pair<int,int>>& occupied, int n, int row, int& ans){
             for(int i = 0; i < n; ++ i){
-                if(!conflict(status, occupied, row, i)){
-                    status[row][i] = 'Q';
+                if(!conflict(occupied, row, i)){
                     occupied.push_back(make_pair(row, i));
                     if(row == n - 1){
                         ans ++;
-                        status[row][i] = '.';
                         occupied.pop_back();
                         return;
                     }
-                    solve(status, occupied, n, row + 1, ans);
-                    status[row][i] = '.';
+                    solve(occupied, n, row + 1, ans);
                     occupied.pop_back();
                 }
             }
         }
-        bool conflict(vector<string>& status, vector<pair<int, int>>&occupied, int x, int y){
-            for(int i = 0; i <= x; ++ i){
-                if(status[i][y] == 'Q')
-                    return true;
-            }
-            for(int j = 0; j <= y; ++ j){
-                if(status[x][j] == 'Q')
-                    return true;
-            }
+        bool conflict(vector<pair<int, int>>&occupied, int x, int y){
             for(auto &pos : occupied){
                 if(abs(pos.first - x) == abs(pos.second - y))
+                    return true;
+                if(pos.first == x || pos.second == y)
                     return true;
             }
             return false;
