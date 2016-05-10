@@ -134,5 +134,11 @@
     <ClCompile Include="49_Group_Anagrams.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="50_Pow_x_n.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="56_Merge_Intervals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
