@@ -97,6 +97,7 @@
     <ClCompile Include="4Sum.cpp" />
     <ClCompile Include="50_Pow_x_n.cpp" />
     <ClCompile Include="56_Merge_Intervals.cpp" />
+    <ClCompile Include="57_Insert_Interval.cpp" />
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="Aileen.cpp" />
     <ClCompile Include="atoi.cpp" />
