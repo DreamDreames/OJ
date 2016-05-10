@@ -95,6 +95,8 @@
     <ClCompile Include="48_Rotate_Image.cpp" />
     <ClCompile Include="49_Group_Anagrams.cpp" />
     <ClCompile Include="4Sum.cpp" />
+    <ClCompile Include="50_Pow_x_n.cpp" />
+    <ClCompile Include="56_Merge_Intervals.cpp" />
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="Aileen.cpp" />
     <ClCompile Include="atoi.cpp" />
