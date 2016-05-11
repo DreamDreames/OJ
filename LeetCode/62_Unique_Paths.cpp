@@ -17,7 +17,23 @@
 namespace UniquePaths {
     class Solution {
     public:
-        int uniquePaths(int m, int n) {
+        int uniquePaths(int m, int n){
+            vector<vector<int>> steps (m, vector<int>(n, -1));
+            steps[0][0] = 1;
+            return dp(steps, m -1, n - 1);
+        }
+    private:
+        int dp(vector<vector<int>>& steps, int x, int y){
+            if(x < 0 || y < 0)
+                return 0;
+            if(x + y == 1)
+                return 1;
+            if(steps[x][y] >= 0)
+                return steps[x][y];
+            steps[x][y] = dp(steps, x - 1, y) + dp(steps, x, y - 1);
+            return steps[x][y];
+        }
+        int mathUniquePaths(int m, int n) {
             int t = min(m, n) - 1;
             int sum = m + n - 2;
             long long total = 1;
