@@ -63,6 +63,5 @@ namespace UniquePaths {
         h.test(1, 100, 1);
         h.test(3, 3, 6);
         h.test(19, 13, 86493225);
-       // h.test(100, 100, 1);
     }
 }
