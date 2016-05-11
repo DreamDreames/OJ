@@ -28,6 +28,7 @@
 		8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */; };
 		8D1CFF971CDB9D03007D100B /* 47_Permutations_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */; };
 		8D1E0F9E1CE36E8800ED73AB /* 59_Spiral_Matrix_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E0F9D1CE36E8800ED73AB /* 59_Spiral_Matrix_2.cpp */; };
+		8D1E0FA01CE378FA00ED73AB /* 60_Permutation_Sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E0F9F1CE378FA00ED73AB /* 60_Permutation_Sequence.cpp */; };
 		8D30BCA11CE0AD2900F79D18 /* 51_N_Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */; };
 		8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */; };
 		8D30BCA61CE0C68600F79D18 /* 53_Maximum_Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA51CE0C68600F79D18 /* 53_Maximum_Subarray.cpp */; };
@@ -70,6 +71,7 @@
 		8D1CFF941CDB88B8007D100B /* 46_Permutations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 46_Permutations.cpp; path = LeetCode/46_Permutations.cpp; sourceTree = "<group>"; };
 		8D1CFF961CDB9D03007D100B /* 47_Permutations_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 47_Permutations_2.cpp; path = LeetCode/47_Permutations_2.cpp; sourceTree = "<group>"; };
 		8D1E0F9D1CE36E8800ED73AB /* 59_Spiral_Matrix_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 59_Spiral_Matrix_2.cpp; path = LeetCode/59_Spiral_Matrix_2.cpp; sourceTree = "<group>"; };
+		8D1E0F9F1CE378FA00ED73AB /* 60_Permutation_Sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 60_Permutation_Sequence.cpp; path = LeetCode/60_Permutation_Sequence.cpp; sourceTree = "<group>"; };
 		8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 51_N_Queens.cpp; path = LeetCode/51_N_Queens.cpp; sourceTree = "<group>"; };
 		8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 52_N_Queens_2.cpp; path = LeetCode/52_N_Queens_2.cpp; sourceTree = "<group>"; };
 		8D30BCA41CE0C61D00F79D18 /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				8D30BCA51CE0C68600F79D18 /* 53_Maximum_Subarray.cpp */,
 				8D30BCA71CE0D17D00F79D18 /* 54_Spiral_Matrix.cpp */,
 				8D1E0F9D1CE36E8800ED73AB /* 59_Spiral_Matrix_2.cpp */,
+				8D1E0F9F1CE378FA00ED73AB /* 60_Permutation_Sequence.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */,
 				8D1CFF8D1CD79490007D100B /* 43_Multiply_Strings.cpp in Sources */,
 				8D30BCA61CE0C68600F79D18 /* 53_Maximum_Subarray.cpp in Sources */,
+				8D1E0FA01CE378FA00ED73AB /* 60_Permutation_Sequence.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
 				8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */,
 			);
