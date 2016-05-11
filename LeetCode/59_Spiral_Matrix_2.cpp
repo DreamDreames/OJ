@@ -72,13 +72,6 @@ namespace SpiralMatrix2{
     };
     TEST(SpiralMatrix2, generateMatrix){
         helper h;
-        h.test(1);
-        cout << endl;
-        h.test(2);
-        cout << endl;
         h.test(3);
-        cout << endl;
-        h.test(4);
-        
     }
 }
