@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "shared.h"
 
 /*
 Given a m x n grid filled with non-negative numbers, 
@@ -12,10 +12,10 @@ namespace MinimumPathSum {
 	class Solution {
 	public:
 		int minPathSum(vector<vector<int>>& grid) {
-			int m = grid.size(), n = grid[0].size();
+			int m = (int)grid.size(), n = (int)grid[0].size();
 			vector<vector<int>> records(m, vector<int>(n, -1));
 			records[0][0] = 0;
-			int ans =  findMinSum(grid, records, m - 1, n - 1);
+			int ans =  findMinSum(grid, records, m - 1, n - 1) + grid[m - 1][n - 1];
 			return ans;
 		}
 	private:
@@ -24,7 +24,7 @@ namespace MinimumPathSum {
 				return records[x][y];
 
 			if (x + y == 1) {
-				records[x][y] = grid[x][y];
+				records[x][y] = grid[0][0];
 				return records[x][y];
 			}
 
@@ -38,16 +38,17 @@ namespace MinimumPathSum {
 			return records[x][y];
 		}
 	};
-	TEST_CLASS(minPathSum) {
-	public:
-		TEST_METHOD(MinimumPathSum) {
-			test({ {1,3,1}, {1,5,1},{4,2,1} }, 7);
-		}
-	private:
+    class  helper{
+    public:
 		void test(vector<vector<int>> grid, int expected) {
 			Solution sln;
 			int actual = sln.minPathSum(grid);
-			Assert::AreEqual(expected, actual);
-		}
+            ASSERT_EQ(expected, actual);
+        }
+    };
+    
+	TEST(MinimumPathSum, minPathSum) {
+        helper h;
+        h.test({ {1,3,1}, {1,5,1},{4,2,1} }, 7);
 	};
 }
