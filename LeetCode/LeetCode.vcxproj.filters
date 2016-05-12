@@ -143,5 +143,11 @@
     <ClCompile Include="57_Insert_Interval.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="63_Unique_Paths_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="64_Minimum_Path_Sum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

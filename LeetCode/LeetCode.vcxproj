@@ -98,6 +98,8 @@
     <ClCompile Include="50_Pow_x_n.cpp" />
     <ClCompile Include="56_Merge_Intervals.cpp" />
     <ClCompile Include="57_Insert_Interval.cpp" />
+    <ClCompile Include="63_Unique_Paths_2.cpp" />
+    <ClCompile Include="64_Minimum_Path_Sum.cpp" />
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="Aileen.cpp" />
     <ClCompile Include="atoi.cpp" />
