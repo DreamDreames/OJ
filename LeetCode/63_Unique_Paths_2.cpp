@@ -53,14 +53,4 @@ namespace UniquePaths2 {
 			return records[x][y];
 		}
 	};
-	TEST_CLASS(UniquePathsWithObstacles) {
-	public:
-		TEST_METHOD(UniquePaths2) {
-
-		}
-	private:
-		void test(vector<vector<int>>& input, int expected) {
-
-		}
-	};
 }
