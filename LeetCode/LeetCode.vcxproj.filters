@@ -143,10 +143,10 @@
     <ClCompile Include="57_Insert_Interval.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="63_Unique_Paths_2.cpp">
+    <ClCompile Include="68_Text_Justification.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="64_Minimum_Path_Sum.cpp">
+    <ClCompile Include="69_Sqrt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
