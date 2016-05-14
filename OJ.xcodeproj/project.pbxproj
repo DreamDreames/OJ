@@ -39,6 +39,7 @@
 		8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */; };
 		8D30BCA61CE0C68600F79D18 /* 53_Maximum_Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA51CE0C68600F79D18 /* 53_Maximum_Subarray.cpp */; };
 		8D30BCA81CE0D17D00F79D18 /* 54_Spiral_Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA71CE0D17D00F79D18 /* 54_Spiral_Matrix.cpp */; };
+		8D60A6FB1CE6437600B8DE7E /* 67_Add_Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */; };
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		8D30BCA41CE0C61D00F79D18 /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
 		8D30BCA51CE0C68600F79D18 /* 53_Maximum_Subarray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 53_Maximum_Subarray.cpp; path = LeetCode/53_Maximum_Subarray.cpp; sourceTree = "<group>"; };
 		8D30BCA71CE0D17D00F79D18 /* 54_Spiral_Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 54_Spiral_Matrix.cpp; path = LeetCode/54_Spiral_Matrix.cpp; sourceTree = "<group>"; };
+		8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 67_Add_Binary.cpp; path = LeetCode/67_Add_Binary.cpp; sourceTree = "<group>"; };
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 				8D1E0FA91CE4D3E600ED73AB /* 65_Valid_Number.cpp */,
 				8D1E0FAB1CE4E0A600ED73AB /* 66_Plus_One.cpp */,
 				8D1E0FAD1CE4E36800ED73AB /* 68_Text_Justification.cpp */,
+				8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				8D30BCA11CE0AD2900F79D18 /* 51_N_Queens.cpp in Sources */,
 				8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */,
 				8D30BCA81CE0D17D00F79D18 /* 54_Spiral_Matrix.cpp in Sources */,
+				8D60A6FB1CE6437600B8DE7E /* 67_Add_Binary.cpp in Sources */,
 				8D1E0FAA1CE4D3E600ED73AB /* 65_Valid_Number.cpp in Sources */,
 				8D1CFF891CD48335007D100B /* 41_First_Missing_Positive.cpp in Sources */,
 				8D1CFF851CD45A85007D100B /* 39_Combination_Sum.cpp in Sources */,
