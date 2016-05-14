@@ -15,48 +15,40 @@ namespace EditDistance {
     public:
         int minDistance(string word1, string word2) {
             vector<vector<int>> status(word1.size(), vector<int>(word2.size(), -1));
-            _status = status;
-            _word1 = word1;
-            _word2 = word2;
-            
-            return distance(0, 0);
+            return distance(word1, word2, status, 0, 0);
         }
     private:
-        string _word1;
-        string _word2;
-        vector<vector<int>> _status;
-        
-    private:
-        int distance(int i1, int i2){
-            if(i1 == _word1.size())
-                return (int)_word2.size() - i2;
+        int distance(string& word1, string& word2, vector<vector<int>>& status, int i1, int i2){
+            if(i1 == word1.size())
+                return (int)word2.size() - i2;
             
-            if(i2 == _word2.size()){
-                return (int)_word1.size() - i1;
+            if(i2 == word2.size()){
+                return (int)word1.size() - i1;
             }
             
-            if(i1 == ((int)_word1.size() - 1) && i2 == ((int)_word2.size() - 1)){
-                if(_word1[i1] == _word2[i2])
+            if(i1 == ((int)word1.size() - 1) && i2 == ((int)word2.size() - 1)){
+                if(word1[i1] == word2[i2])
                     return 0;
                 return 1;
             }
-            if(_status[i1][i2] > 0)
-                return _status[i1][i2];
+            if(status[i1][i2] > 0)
+                return status[i1][i2];
             
             int d1, d2, d3;
-            if(_word1[i1] == _word2[i2]){
-                d1 = distance(i1 + 1, i2 + 1);
+            if(word1[i1] == word2[i2]){
+                d1 = distance(word1, word2, status, i1 + 1, i2 + 1);
             }
             else{
-                d1 = distance(i1 + 1, i2 + 1) + 1;
+                d1 = distance(word1, word2, status, i1 + 1, i2 + 1) + 1;
             }
-            d2 = distance(i1 + 1, i2) + 1;
-            d3 = distance(i1, i2 + 1) + 1;
-            _status[i1][i2] = min3(d1, d2, d3);
-            return _status[i1][i2];
+            d2 = distance(word1, word2, status, i1 + 1, i2) + 1;
+            d3 = distance(word1, word2, status, i1, i2 + 1) + 1;
+            status[i1][i2] = min3(d1, d2, d3);
+            return status[i1][i2];
         }
         int min3(int a, int b, int c){
-            return min(min(a, b), c);
+            int temp = a < b ? a : b;
+            return temp < c ? temp : c;
         }
     };
     
