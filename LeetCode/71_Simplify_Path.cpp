@@ -31,7 +31,7 @@ namespace SimplifyPath {
                 stk.pop();
             }
             if(ans.empty())
-                return "/";
+                ans = "/";
             return ans;
         }
     private:
