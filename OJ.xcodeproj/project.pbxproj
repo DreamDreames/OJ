@@ -11,6 +11,8 @@
 		8D0715961C8F31650011B820 /* libOJ.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0715781C8F1BC30011B820 /* libOJ.dylib */; };
 		8D0715991C8F37D40011B820 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0715971C8F37840011B820 /* gtest.framework */; };
 		8D07159A1C8F38090011B820 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0715971C8F37840011B820 /* gtest.framework */; };
+		8D111A241CE7724B0038C9B4 /* 72_Edit_Distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */; };
+		8D111A261CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */; };
 		8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF781CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp */; };
 		8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */; };
 		8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */; };
@@ -63,6 +65,8 @@
 		8D07158C1C8F2A5D0011B820 /* Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tests; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D07158E1C8F2A5D0011B820 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8D0715971C8F37840011B820 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gtest.framework; sourceTree = "<group>"; };
+		8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 72_Edit_Distance.cpp; path = LeetCode/72_Edit_Distance.cpp; sourceTree = "<group>"; };
+		8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 73_Set_Matrix_Zeroes.cpp; path = LeetCode/73_Set_Matrix_Zeroes.cpp; sourceTree = "<group>"; };
 		8D1CFF781CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 10_Regular_Expression_Matching.cpp; path = LeetCode/10_Regular_Expression_Matching.cpp; sourceTree = "<group>"; };
 		8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 34_Search_for_a_Range.cpp; path = LeetCode/34_Search_for_a_Range.cpp; sourceTree = "<group>"; };
 		8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 35_Search_Insert_Position.cpp; path = LeetCode/35_Search_Insert_Position.cpp; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 				8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */,
 				8D60A6FC1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp */,
 				8D60A6FE1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp */,
+				8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */,
+				8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 				8D1E0FAC1CE4E0A600ED73AB /* 66_Plus_One.cpp in Sources */,
 				8D1CFF831CD450CD007D100B /* 38_Count_and_Say.cpp in Sources */,
 				8D1CFF931CDA43A5007D100B /* 45_Jump_Game_2.cpp in Sources */,
+				8D111A261CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp in Sources */,
+				8D111A241CE7724B0038C9B4 /* 72_Edit_Distance.cpp in Sources */,
 				8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */,
 				8D1CFF8B1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp in Sources */,
 				8D60A6FF1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp in Sources */,
