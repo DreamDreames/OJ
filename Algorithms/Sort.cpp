@@ -58,6 +58,18 @@ namespace Algorithms {
             }
         }
     };
+    
+    class BubbleSort{
+    public:
+        void sort(vector<int>& arr){
+            for(auto iter = arr.begin(); iter != arr.end(); ++ iter){
+                for(auto iter2 = arr.end() - 1; iter2 != iter;  -- iter2){
+                    if(*iter2 < *(iter2 - 1))
+                        swap(*iter2, *(iter2 - 1));
+                }
+            }
+        }
+    };
     class helper{
     public:
         void test(vector<int> original, vector<int> expected){
@@ -73,6 +85,11 @@ namespace Algorithms {
             MergeSort ms;
             ms.sort(temp3);
             ASSERT_EQ(expected, temp3);
+            
+            auto temp4 = original;
+            BubbleSort bs;
+            bs.sort(temp4);
+            ASSERT_EQ(expected, temp4);
         }
     };
     TEST(Sort, sort) {
