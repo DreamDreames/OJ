@@ -61,13 +61,12 @@ namespace SpiralMatrix2{
         void test(int n){
             Solution sln;
             auto ans = sln.generateMatrix(n);
-            for(auto &row : ans){
-                for(auto n: row){
-                    cout << n << " ";
-                }
-                cout << endl;
-            }
-            
+//            for(auto &row : ans){
+//                for(auto n: row){
+//                    cout << n << " ";
+//                }
+//                cout << endl;
+//            }
         }
     };
     TEST(SpiralMatrix2, generateMatrix){
