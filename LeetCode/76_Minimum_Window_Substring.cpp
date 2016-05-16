@@ -94,12 +94,12 @@ namespace MinimumWindowSubstring{
         }
     };
     TEST(MinimumWindowSubstring, minWindow){
-        helper h;
+//        helper h;
 //        h.test("ADOBECODEBANC", "ABC", "BANC");
 //        h.test("a", "aa", "");
 //        h.test("bba", "ab", "ba");
 //        h.test("aa", "aa", "aa");
 //        h.test("bbaa", "aba", "baa");
-        h.test("aaabdabcefaecbef", "abc", "abc");
+//        h.test("aaabdabcefaecbef", "abc", "abc");
     }
 }
