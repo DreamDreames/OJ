@@ -42,12 +42,12 @@ namespace Combinations {
         void test(int n, int k){
             Solution sln;
             auto actual = sln.combine(n, k);
-            for(auto &row: actual){
-                for(auto n: row){
-                    cout << n << " " ;
-                }
-                cout << endl;
-            }
+//            for(auto &row: actual){
+//                for(auto n: row){
+//                    cout << n << " " ;
+//                }
+//                cout << endl;
+//            }
         }
         
     };
