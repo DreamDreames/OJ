@@ -3,13 +3,9 @@
 
 using namespace std;
 
-namespace LeetCode
+namespace SwapNodesInPair
 {
-#ifdef _test
-	class SwapNodesInPair{
-#elif
 	class Solution{
-#endif
 	public:
 		ListNode* swapPairs(ListNode* head){
 			auto h = swapTwo(head);
@@ -59,7 +55,7 @@ namespace LeetCode
 	private:
 		void assert_helper(vector<int> lists, vector<int>expected){
 			auto head = ConstructList(lists);
-			SwapNodesInPair sln;
+			Solution sln;
 			head = sln.swapPairs(head);
 			for (auto &e : expected){
 				Assert::AreEqual(e, head->val);

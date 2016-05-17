@@ -16,6 +16,3 @@
 // TODO: reference additional headers your program requires here
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
-
-
-#define _test
