@@ -31,7 +31,7 @@ namespace WordSearch {
             map<char, vector<pair<int,int>>> records;
             for(int i = 0; i < board.size(); ++ i){
                 for(int j = 0; j < board[i].size(); ++ j){
-                    if(board[i][j] == word[0]){
+                    if(word[0] == board[i][j]){
                         if(search(board, status, word, 0, i, j))
                             return true;
                     }
@@ -51,12 +51,14 @@ namespace WordSearch {
             
             status[x][y] = true;
             
-            bool result = search(board, status, word, start + 1, x + 1, y) ||
+            if (search(board, status, word, start + 1, x + 1, y) ||
             search(board, status, word, start + 1, x, y + 1) ||
             search(board, status, word, start + 1, x - 1, y) ||
-            search(board, status, word, start + 1, x, y - 1);
+            search(board, status, word, start + 1, x, y - 1))
+                return true;
+            
             status[x][y] = false;
-            return result;
+            return false;
         }
     };
 }
