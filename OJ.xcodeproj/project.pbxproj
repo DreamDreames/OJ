@@ -19,6 +19,7 @@
 		8D111A2F1CE8C1010038C9B4 /* 76_Minimum_Window_Substring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A2E1CE8C1010038C9B4 /* 76_Minimum_Window_Substring.cpp */; };
 		8D111A311CEA2E8F0038C9B4 /* 77_Combinations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A301CEA2E8F0038C9B4 /* 77_Combinations.cpp */; };
 		8D111A331CEA32640038C9B4 /* 78_Subsets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A321CEA32640038C9B4 /* 78_Subsets.cpp */; };
+		8D111A351CEB70BA0038C9B4 /* 79_Word_Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A341CEB70BA0038C9B4 /* 79_Word_Search.cpp */; };
 		8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF781CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp */; };
 		8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */; };
 		8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */; };
@@ -79,6 +80,7 @@
 		8D111A2E1CE8C1010038C9B4 /* 76_Minimum_Window_Substring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 76_Minimum_Window_Substring.cpp; path = LeetCode/76_Minimum_Window_Substring.cpp; sourceTree = "<group>"; };
 		8D111A301CEA2E8F0038C9B4 /* 77_Combinations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 77_Combinations.cpp; path = LeetCode/77_Combinations.cpp; sourceTree = "<group>"; };
 		8D111A321CEA32640038C9B4 /* 78_Subsets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 78_Subsets.cpp; path = LeetCode/78_Subsets.cpp; sourceTree = "<group>"; };
+		8D111A341CEB70BA0038C9B4 /* 79_Word_Search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 79_Word_Search.cpp; path = LeetCode/79_Word_Search.cpp; sourceTree = "<group>"; };
 		8D1CFF781CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 10_Regular_Expression_Matching.cpp; path = LeetCode/10_Regular_Expression_Matching.cpp; sourceTree = "<group>"; };
 		8D1CFF7A1CCFC29C007D100B /* 34_Search_for_a_Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 34_Search_for_a_Range.cpp; path = LeetCode/34_Search_for_a_Range.cpp; sourceTree = "<group>"; };
 		8D1CFF7C1CD264EC007D100B /* 35_Search_Insert_Position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 35_Search_Insert_Position.cpp; path = LeetCode/35_Search_Insert_Position.cpp; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				8D111A2E1CE8C1010038C9B4 /* 76_Minimum_Window_Substring.cpp */,
 				8D111A301CEA2E8F0038C9B4 /* 77_Combinations.cpp */,
 				8D111A321CEA32640038C9B4 /* 78_Subsets.cpp */,
+				8D111A341CEB70BA0038C9B4 /* 79_Word_Search.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				8D1E0FAC1CE4E0A600ED73AB /* 66_Plus_One.cpp in Sources */,
 				8D1CFF831CD450CD007D100B /* 38_Count_and_Say.cpp in Sources */,
+				8D111A351CEB70BA0038C9B4 /* 79_Word_Search.cpp in Sources */,
 				8D1CFF931CDA43A5007D100B /* 45_Jump_Game_2.cpp in Sources */,
 				8D111A261CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp in Sources */,
 				8D111A241CE7724B0038C9B4 /* 72_Edit_Distance.cpp in Sources */,
