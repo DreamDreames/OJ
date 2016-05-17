@@ -64,12 +64,12 @@ namespace Subsets{
         void test(vector<int> nums){
             Solution sln;
             auto result = sln.subsets(nums);
-            for(auto & row: result){
-                for(auto n : row){
-                    cout << n << " ";
-                }
-                cout << endl;
-            }
+//            for(auto & row: result){
+//                for(auto n : row){
+//                    cout << n << " ";
+//                }
+//                cout << endl;
+//            }
         }
     };
     TEST(Subsets, subsets){
