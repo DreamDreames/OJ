@@ -3,13 +3,9 @@
 
 using namespace std;
 
-namespace LeetCode{
+namespace RemoveDuplicates {
 
-#ifdef _test
-	class RemoveDuplicates{
-#else
 	class Solution{
-#endif
 	public:
 		int removeDuplicates(vector<int>& nums){
 			int size = nums.size();
@@ -41,7 +37,7 @@ namespace LeetCode{
 		}
 	private:
 		void assert_helper(vector<int> nums, vector<int>expected){
-			RemoveDuplicates sln;
+			Solution sln;
 			int count = sln.removeDuplicates(nums);
 			while ((--count) >= 0){
 				Assert::AreEqual(expected[count], nums[count]);

@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Algorithms">
+      <UniqueIdentifier>{a74a7e1a-e908-45ef-a455-d925aa622691}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -143,10 +146,13 @@
     <ClCompile Include="57_Insert_Interval.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="68_Text_Justification.cpp">
+    <ClCompile Include="69_Sqrt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="69_Sqrt.cpp">
+    <ClCompile Include="..\Algorithms\Sort.cpp">
+      <Filter>Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="76_Minimum_Window_Substring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
