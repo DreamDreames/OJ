@@ -55,6 +55,7 @@
 		8D60A6FF1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FE1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp */; };
 		8DC5FF281CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */; };
 		8DC5FF2A1CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */; };
+		8DC5FF2C1CECC242004369DF /* heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF2B1CECC242004369DF /* heap.cpp */; };
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		8D60A6FE1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 71_Simplify_Path.cpp; path = LeetCode/71_Simplify_Path.cpp; sourceTree = "<group>"; };
 		8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 82_Remove_Duplicates_From_Sorted_List2.cpp; path = LeetCode/82_Remove_Duplicates_From_Sorted_List2.cpp; sourceTree = "<group>"; };
 		8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 83_Remove_Duplicates_From_Sorted_List.cpp; path = LeetCode/83_Remove_Duplicates_From_Sorted_List.cpp; sourceTree = "<group>"; };
+		8DC5FF2B1CECC242004369DF /* heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = heap.cpp; path = Algorithms/heap.cpp; sourceTree = "<group>"; };
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				8D111A2C1CE8BF000038C9B4 /* Sort.cpp */,
+				8DC5FF2B1CECC242004369DF /* heap.cpp */,
 			);
 			name = Algorithms;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
 				8D1E0FA41CE38A6900ED73AB /* 62_Unique_Paths.cpp in Sources */,
 				8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */,
+				8DC5FF2C1CECC242004369DF /* heap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
