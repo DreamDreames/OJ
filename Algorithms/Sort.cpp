@@ -1,4 +1,5 @@
 #include "shared.h"
+#include "heap.cpp"
 
 namespace Algorithms {
     class InnerSort{
@@ -70,6 +71,24 @@ namespace Algorithms {
             }
         }
     };
+    
+    class HeapSort{
+    public:
+        void sort(vector<int>& arr){
+            heap h;
+            h.heap_sort(arr);
+        }
+    private:
+        int left(int i){
+            return 2 * i;
+        }
+        int right(int i ){
+            return 2 * i + 1;
+        }
+        int parent(int i){
+            return i / 2;
+        }
+    };
     class helper{
     public:
         void test(vector<int> original, vector<int> expected){
@@ -90,6 +109,11 @@ namespace Algorithms {
             BubbleSort bs;
             bs.sort(temp4);
             ASSERT_EQ(expected, temp4);
+            
+            auto temp5 = original;
+            HeapSort hs;
+            hs.sort(temp5);
+            ASSERT_EQ(expected, temp5);
         }
     };
     TEST(Sort, sort) {
