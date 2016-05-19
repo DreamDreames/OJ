@@ -90,7 +90,6 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Algorithms\Sort.cpp" />
     <ClCompile Include="3Sum.cpp" />
     <ClCompile Include="3SumClosest.cpp" />
     <ClCompile Include="48_Rotate_Image.cpp" />

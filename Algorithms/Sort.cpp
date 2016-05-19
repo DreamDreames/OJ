@@ -1,4 +1,8 @@
+#ifdef _VS
+#include "../LeetCode/stdafx.h"
+#else
 #include "shared.h"
+#endif
 #include "heap.cpp"
 
 namespace Algorithms {
