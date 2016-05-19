@@ -13,6 +13,11 @@
 #include <assert.h>
 #include <vector>
 #include <algorithm>
+#include <unordered_set>
+#include <unordered_map>
+#include <set>
+#include <map>
+#include <stack>
 // TODO: reference additional headers your program requires here
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;

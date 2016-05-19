@@ -149,9 +149,6 @@
     <ClCompile Include="69_Sqrt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Algorithms\Sort.cpp">
-      <Filter>Algorithms</Filter>
-    </ClCompile>
     <ClCompile Include="76_Minimum_Window_Substring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
