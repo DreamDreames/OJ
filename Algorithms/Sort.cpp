@@ -93,6 +93,34 @@ namespace Algorithms {
             return i / 2;
         }
     };
+    
+    class QuickSort{
+    public:
+        void sort(vector<int>& arr){
+            qsort(arr, 0, (int)arr.size() - 1);
+        }
+    private:
+        void qsort(vector<int>& arr, int start, int end){
+            if(start >= end)
+                return;
+            
+            
+            int p = partition(arr, start, end);
+            qsort(arr, start, p - 1);
+            qsort(arr, p + 1, end);
+        }
+        int partition(vector<int>& arr, int start, int end){
+            int i = start - 1, x = arr[end];
+            for(int j = start; j < end; ++ j){
+                if(arr[j] <= x){
+                    i ++;
+                    swap(arr[i], arr[j]);
+                }
+            }
+            swap(arr[i + 1], arr[end]);
+            return i + 1;
+        }
+    };
     class helper{
     public:
         void test(vector<int> original, vector<int> expected){
@@ -118,6 +146,11 @@ namespace Algorithms {
             HeapSort hs;
             hs.sort(temp5);
             ASSERT_EQ(expected, temp5);
+            
+            auto temp6 = original;
+            QuickSort qs;
+            qs.sort(temp6);
+            ASSERT_EQ(expected, temp6);
         }
     };
     TEST(Sort, sort) {
@@ -126,5 +159,6 @@ namespace Algorithms {
         h.test({1}, {1});
         h.test({2, 1}, {1, 2});
         h.test({1, 2}, {1, 2});
+        h.test({1, 3, 2}, {1, 2, 3});
     }
 }
