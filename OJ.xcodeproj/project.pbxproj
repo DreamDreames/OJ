@@ -56,7 +56,9 @@
 		8DC5FF281CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */; };
 		8DC5FF2A1CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */; };
 		8DC5FF2C1CECC242004369DF /* heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF2B1CECC242004369DF /* heap.cpp */; };
+		8DC5FF2E1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */; };
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
+		8DFFAC641CEF60720027E2CC /* 86_Partition_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -123,7 +125,9 @@
 		8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 82_Remove_Duplicates_From_Sorted_List2.cpp; path = LeetCode/82_Remove_Duplicates_From_Sorted_List2.cpp; sourceTree = "<group>"; };
 		8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 83_Remove_Duplicates_From_Sorted_List.cpp; path = LeetCode/83_Remove_Duplicates_From_Sorted_List.cpp; sourceTree = "<group>"; };
 		8DC5FF2B1CECC242004369DF /* heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = heap.cpp; path = Algorithms/heap.cpp; sourceTree = "<group>"; };
+		8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 84_Largest_Rectangle_in_Histogram.cpp; path = LeetCode/84_Largest_Rectangle_in_Histogram.cpp; sourceTree = "<group>"; };
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
+		8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 86_Partition_List.cpp; path = LeetCode/86_Partition_List.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,8 @@
 				8D111A381CEB7B3F0038C9B4 /* 81_Search_in_Rotated_Sorted_Array2.cpp */,
 				8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */,
 				8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */,
+				8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */,
+				8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */,
 				8D1CFF8B1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp in Sources */,
 				8D60A6FF1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp in Sources */,
+				8DC5FF2E1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp in Sources */,
 				8D1CFF8F1CD7A5FE007D100B /* 44_Wildcard_Matching.cpp in Sources */,
 				8D30BCA11CE0AD2900F79D18 /* 51_N_Queens.cpp in Sources */,
 				8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */,
@@ -371,6 +378,7 @@
 				8D1CFF811CD27873007D100B /* 37_Sudoku_Solver.cpp in Sources */,
 				8D111A2F1CE8C1010038C9B4 /* 76_Minimum_Window_Substring.cpp in Sources */,
 				8D1CFF8D1CD79490007D100B /* 43_Multiply_Strings.cpp in Sources */,
+				8DFFAC641CEF60720027E2CC /* 86_Partition_List.cpp in Sources */,
 				8D30BCA61CE0C68600F79D18 /* 53_Maximum_Subarray.cpp in Sources */,
 				8D111A311CEA2E8F0038C9B4 /* 77_Combinations.cpp in Sources */,
 				8D1E0FA01CE378FA00ED73AB /* 60_Permutation_Sequence.cpp in Sources */,
