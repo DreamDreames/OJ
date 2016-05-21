@@ -59,6 +59,7 @@
 		8DC5FF2E1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */; };
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
 		8DFFAC641CEF60720027E2CC /* 86_Partition_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */; };
+		8DFFAC661CF053D10027E2CC /* 87_Scramble_String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -128,6 +129,7 @@
 		8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 84_Largest_Rectangle_in_Histogram.cpp; path = LeetCode/84_Largest_Rectangle_in_Histogram.cpp; sourceTree = "<group>"; };
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
 		8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 86_Partition_List.cpp; path = LeetCode/86_Partition_List.cpp; sourceTree = "<group>"; };
+		8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 87_Scramble_String.cpp; path = LeetCode/87_Scramble_String.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */,
 				8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */,
 				8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */,
+				8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFFAC661CF053D10027E2CC /* 87_Scramble_String.cpp in Sources */,
 				8D1E0FAC1CE4E0A600ED73AB /* 66_Plus_One.cpp in Sources */,
 				8D1CFF831CD450CD007D100B /* 38_Count_and_Say.cpp in Sources */,
 				8D111A351CEB70BA0038C9B4 /* 79_Word_Search.cpp in Sources */,
