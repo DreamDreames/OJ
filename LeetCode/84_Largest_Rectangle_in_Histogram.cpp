@@ -18,21 +18,18 @@ namespace LargestRectangleInHistogram {
     public:
         int largestRectangleArea(vector<int>& heights) {
             int maxArea = 0;
-            vector<int> records (heights.size(), -1);
+            
             for(int i = 0; i < heights.size(); ++ i){
                 if(i + 1 < heights.size() && heights[i] <= heights[i + 1])
                     continue;
-                int min = heights[i];
-                if(heights[i] > maxArea)
-                    maxArea = heights[i];
+                
+                int minValue = heights[i];
+                maxArea = max(heights[i], maxArea);
+                
                 for(int j = i - 1; j >= 0; -- j){
-                    if(heights[j] < min){
-                        min = heights[j];
-                    }
+                    minValue = min(heights[j], minValue);
                     
-                    int area = (i - j + 1) * min;
-                    if(area > maxArea)
-                        maxArea = area;
+                    maxArea = max((i - j + 1) * minValue, maxArea);
                 }
             }
             return maxArea;
