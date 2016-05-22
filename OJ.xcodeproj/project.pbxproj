@@ -60,6 +60,7 @@
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
 		8DFFAC641CEF60720027E2CC /* 86_Partition_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */; };
 		8DFFAC661CF053D10027E2CC /* 87_Scramble_String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */; };
+		8DFFAC681CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC671CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,6 +131,7 @@
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
 		8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 86_Partition_List.cpp; path = LeetCode/86_Partition_List.cpp; sourceTree = "<group>"; };
 		8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 87_Scramble_String.cpp; path = LeetCode/87_Scramble_String.cpp; sourceTree = "<group>"; };
+		8DFFAC671CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 85_Maximal_Rectangle.cpp; path = LeetCode/85_Maximal_Rectangle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */,
 				8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */,
 				8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */,
+				8DFFAC671CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp */,
 				8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */,
 				8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */,
 			);
@@ -371,6 +374,7 @@
 				8D111A2A1CE8B81B0038C9B4 /* 75_Sort_Colors.cpp in Sources */,
 				8D111A371CEB75F60038C9B4 /* 80_Remove_Duplicates_From_Sorted_Array2.cpp in Sources */,
 				8D111A391CEB7B3F0038C9B4 /* 81_Search_in_Rotated_Sorted_Array2.cpp in Sources */,
+				8DFFAC681CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp in Sources */,
 				8D60A6FD1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp in Sources */,
 				8D1CFF7F1CD26AB4007D100B /* 36_Valid_Sudoku.cpp in Sources */,
 				8D111A2D1CE8BF000038C9B4 /* Sort.cpp in Sources */,
