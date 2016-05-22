@@ -61,6 +61,7 @@
 		8DFFAC641CEF60720027E2CC /* 86_Partition_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */; };
 		8DFFAC661CF053D10027E2CC /* 87_Scramble_String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */; };
 		8DFFAC681CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC671CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp */; };
+		8DFFAC6A1CF1AE0E0027E2CC /* 88_MergeSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DFFAC691CF1AE0E0027E2CC /* 88_MergeSortedArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -132,6 +133,7 @@
 		8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 86_Partition_List.cpp; path = LeetCode/86_Partition_List.cpp; sourceTree = "<group>"; };
 		8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 87_Scramble_String.cpp; path = LeetCode/87_Scramble_String.cpp; sourceTree = "<group>"; };
 		8DFFAC671CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 85_Maximal_Rectangle.cpp; path = LeetCode/85_Maximal_Rectangle.cpp; sourceTree = "<group>"; };
+		8DFFAC691CF1AE0E0027E2CC /* 88_MergeSortedArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 88_MergeSortedArray.cpp; path = LeetCode/88_MergeSortedArray.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				8DFFAC671CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp */,
 				8DFFAC631CEF60720027E2CC /* 86_Partition_List.cpp */,
 				8DFFAC651CF053D10027E2CC /* 87_Scramble_String.cpp */,
+				8DFFAC691CF1AE0E0027E2CC /* 88_MergeSortedArray.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			files = (
 				8DFFAC661CF053D10027E2CC /* 87_Scramble_String.cpp in Sources */,
 				8D1E0FAC1CE4E0A600ED73AB /* 66_Plus_One.cpp in Sources */,
+				8DFFAC6A1CF1AE0E0027E2CC /* 88_MergeSortedArray.cpp in Sources */,
 				8D1CFF831CD450CD007D100B /* 38_Count_and_Say.cpp in Sources */,
 				8D111A351CEB70BA0038C9B4 /* 79_Word_Search.cpp in Sources */,
 				8D1CFF931CDA43A5007D100B /* 45_Jump_Game_2.cpp in Sources */,
