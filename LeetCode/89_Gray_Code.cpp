@@ -22,19 +22,13 @@ namespace GrayCode{
     public:
         vector<int> grayCode(int n) {
             vector<int> ans;
-            int max = pow(2, n) - 1;
+            ans.push_back(0);
             int step = 1;
-            for(int i = 0; i <= max; ){
-                ans.push_back(i);
-                i = i + step;
+            for(int i = 1; i <= n; ++ i){
+                for(int j = (int)ans.size() - 1; j >= 0; -- j){
+                    ans.push_back(ans[j] + step);
+                }
                 step *= 2;
-            }
-            step = 1;
-            int i = ans.back() - step;
-            while(i > 0){
-                ans.push_back(i);
-                step *= 2;
-                i -= step;
             }
             return ans;
         }
