@@ -38,10 +38,10 @@ namespace GrayCode{
         void test(int n){
             Solution sln;
             vector<int> actual = sln.grayCode(n);
-            for(int i = 0; i < actual.size(); ++ i){
-                cout << actual[i] << " ";
-            }
-            cout << endl;
+//            for(int i = 0; i < actual.size(); ++ i){
+//                cout << actual[i] << " ";
+//            }
+//            cout << endl;
         }
     };
     TEST(GrayCode, grayCode){
