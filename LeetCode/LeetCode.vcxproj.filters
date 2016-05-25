@@ -149,7 +149,7 @@
     <ClCompile Include="69_Sqrt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="76_Minimum_Window_Substring.cpp">
+    <ClCompile Include="93_Restore_IP_Addresses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
