@@ -26,8 +26,10 @@ namespace RestoreIpAddresses{
 			}
 
 			if (depth == 3){
-				string& field = s.substr(start);
+				string field = s.substr(start);
 				int num = stoi(field);
+				if (s[start] == '0' && start + 1 < s.length())
+					return;
 				if (num >= 0 && num <= 255){
 					result += "." + field;
 					ans.push_back(result);
@@ -46,6 +48,8 @@ namespace RestoreIpAddresses{
 					result += "." + temp;
 				restore(s, depth + 1, start + i, result, ans);
 				result = dup;
+				if (s[start] == '0')
+					break;
 			}
 		}
 	};
@@ -55,6 +59,8 @@ namespace RestoreIpAddresses{
 		TEST_METHOD(RestoreIpAddresses){
 			test("25525511135", { "255.255.11.135", "255.255.111.35" });
 			test("0000", { "0.0.0.0" });
+			test("010010", { "0.10.0.10", "0.100.1.0" });
+			test("00000", {});
 		}
 	private:
 		void test(string s, vector<string> expected){
