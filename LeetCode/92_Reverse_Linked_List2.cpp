@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "shared.h"
 //#include "ListNode.h"
 /*
  Reverse a linked list from position m to n. Do it in-place and in one-pass.
@@ -21,9 +21,9 @@ namespace ReverseLinkedList2{
     class Solution {
     public:
         ListNode* reverseBetween(ListNode* head, int m, int n) {
-			ListNode* current = head;
-			ListNode* prev = head;
-			int step = 1;
+			ListNode* current = new ListNode(0);
+            current->next = head;
+			ListNode* prev = current;
 			for (int i = 0; i + 1 < m; ++i){
 				current = current->next;
 			}
@@ -31,21 +31,18 @@ namespace ReverseLinkedList2{
 			current = current->next;
 
 			for (int i = 0; i < n - m; ++i){
-				ListNode* next = current->next->next;
+				ListNode* end = current->next->next;
 				current->next->next = prev->next;
 				prev->next = current->next;
-				current->next->next->next = next;
+                current->next = end;
 			}
+            if( m == 1)
+                return prev->next;
 			return head;
         }
     };
 
-
-	TEST_CLASS(reverseTest){
-	public:
-		TEST_METHOD(reverseLinkedListTest){
-			test({ 1, 2, 3, 4, 5 }, 2, 4, { 1, 4, 3, 2, 5 });
-		}
+    class helper{
 	private:
 		ListNode* ConstructList(std::vector<int>& list){
 			if (list.empty())
@@ -59,17 +56,30 @@ namespace ReverseLinkedList2{
 			}
 			return head;
 		}
+    public:
 		void test(vector<int> input, int m, int n, vector<int> expected){
 			auto head = ConstructList(input);
 			Solution sln;
 			auto actual = sln.reverseBetween(head, m, n);
 			auto exp = ConstructList(expected);
 			while (actual != NULL && exp != NULL){
-				Assert::AreEqual(exp->val, actual->val);
+                ASSERT_EQ(exp->val, actual->val);
 				actual = actual->next;
 				exp = exp->next;
 			}
-			Assert::AreEqual(exp, actual);
+            ASSERT_EQ(exp, actual);
 		}
 	};
+    
+    
+    TEST(ReverseLinkedList2,reverseBetween ){
+        helper h;
+        h.test({1,2,3,4,5}, 2, 4, {1,4,3,2,5});
+        h.test({1},1,1, {1});
+        h.test({1,2,3,4,5}, 1,2, {2,1,3,4,5});
+        h.test({1,2,3,4,5}, 5, 5, {1,2,3,4,5});
+        h.test({1,2,3,4,5}, 4, 5, {1,2,3,5,4});
+        h.test({1,2}, 1, 2,{2,1});
+    }
+        
 }
