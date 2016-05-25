@@ -20,14 +20,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>false</UseOfMfc>
@@ -99,7 +99,7 @@
     <ClCompile Include="56_Merge_Intervals.cpp" />
     <ClCompile Include="57_Insert_Interval.cpp" />
     <ClCompile Include="69_Sqrt.cpp" />
-    <ClCompile Include="76_Minimum_Window_Substring.cpp" />
+    <ClCompile Include="93_Restore_IP_Addresses.cpp" />
     <ClCompile Include="AddTwoNumbers.cpp" />
     <ClCompile Include="Aileen.cpp" />
     <ClCompile Include="atoi.cpp" />
