@@ -27,15 +27,24 @@ namespace BinaryTreeInorderTraversal {
     public:
         vector<int> inorderTraversal(TreeNode* root) {
             vector<int> ans;
-            TreeNode* current = root;
-            TreeNode* parent = root;
-            while(true){
+            if(root == NULL)
+                return ans;
+            stack<TreeNode*> stk;
+            stk.push(root);
+            while(!stk.empty()){
+                TreeNode* current = stk.top();
                 if(current->left != NULL){
-                    parent = current;
-                    current = current->left;
+                    stk.push(current->left);
+                    current->left = NULL;
+                }
+                else{
+                    stk.pop();
+                    ans.push_back(current->val);
+                    if(current->right != NULL)
+                        stk.push(current->right);
                 }
             }
+            return ans;
         }
-        
     };
 }
