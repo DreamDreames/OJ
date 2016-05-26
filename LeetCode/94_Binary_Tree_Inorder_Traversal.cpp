@@ -25,26 +25,49 @@ namespace BinaryTreeInorderTraversal {
 
     class Solution {
     public:
-        vector<int> inorderTraversal(TreeNode* root) {
+        vector<int> inorderTraversal(TreeNode* root){
+            vector<int> ans;
+            traverse(root, ans);
+            return ans;
+        }
+    private:
+        void traverse(TreeNode* node, vector<int>& ans){
+            if(node == NULL)
+                return;
+            if(node != NULL){
+                traverse(node->left, ans);
+                ans.push_back(node->val);
+                traverse(node->right, ans);
+            }
+        }
+        vector<int> inorderTraversal1(TreeNode* root) {
             vector<int> ans;
             if(root == NULL)
                 return ans;
             stack<TreeNode*> stk;
-            stk.push(root);
-            while(!stk.empty()){
-                TreeNode* current = stk.top();
-                if(current->left != NULL){
-                    stk.push(current->left);
-                    current->left = NULL;
+            
+            while(root!=NULL || !stk.empty()){
+                while(root!=NULL){
+                    stk.push(root);
+                    root = root->left;
                 }
-                else{
-                    stk.pop();
-                    ans.push_back(current->val);
-                    if(current->right != NULL)
-                        stk.push(current->right);
-                }
+                root = stk.top();
+                stk.pop();
+                ans.push_back(root->val);
+                root = root->right;
             }
             return ans;
         }
     };
+    TEST(BinaryTreeInorderTraversal, inorderTraversal){
+        TreeNode* root = new TreeNode(1);
+        TreeNode* node1 = new TreeNode(2);
+        TreeNode* node2 = new TreeNode(3);
+        node1->left = node2;
+        root->right = node1;
+        Solution sln;
+        auto actual = sln.inorderTraversal(root);
+        vector<int> expected{1,3,2};
+        ASSERT_EQ(expected, actual);
+    }
 }
