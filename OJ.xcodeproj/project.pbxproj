@@ -50,6 +50,7 @@
 		8D211F901CF9896500E701D2 /* 97_Interleaving_String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F8F1CF9896500E701D2 /* 97_Interleaving_String.cpp */; };
 		8D211F921CF9A0D300E701D2 /* 98_Validate_Binary_Search_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F911CF9A0D300E701D2 /* 98_Validate_Binary_Search_Tree.cpp */; };
 		8D211F941CF9E04100E701D2 /* 100_Same_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F931CF9E04100E701D2 /* 100_Same_Tree.cpp */; };
+		8D211F961CF9E1AC00E701D2 /* 101_Symmetric_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F951CF9E1AC00E701D2 /* 101_Symmetric_Tree.cpp */; };
 		8D30BCA11CE0AD2900F79D18 /* 51_N_Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */; };
 		8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */; };
 		8D30BCA61CE0C68600F79D18 /* 53_Maximum_Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA51CE0C68600F79D18 /* 53_Maximum_Subarray.cpp */; };
@@ -131,6 +132,7 @@
 		8D211F8F1CF9896500E701D2 /* 97_Interleaving_String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 97_Interleaving_String.cpp; path = LeetCode/97_Interleaving_String.cpp; sourceTree = "<group>"; };
 		8D211F911CF9A0D300E701D2 /* 98_Validate_Binary_Search_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 98_Validate_Binary_Search_Tree.cpp; path = LeetCode/98_Validate_Binary_Search_Tree.cpp; sourceTree = "<group>"; };
 		8D211F931CF9E04100E701D2 /* 100_Same_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 100_Same_Tree.cpp; path = LeetCode/100_Same_Tree.cpp; sourceTree = "<group>"; };
+		8D211F951CF9E1AC00E701D2 /* 101_Symmetric_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 101_Symmetric_Tree.cpp; path = LeetCode/101_Symmetric_Tree.cpp; sourceTree = "<group>"; };
 		8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 51_N_Queens.cpp; path = LeetCode/51_N_Queens.cpp; sourceTree = "<group>"; };
 		8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 52_N_Queens_2.cpp; path = LeetCode/52_N_Queens_2.cpp; sourceTree = "<group>"; };
 		8D30BCA41CE0C61D00F79D18 /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				8D211F8F1CF9896500E701D2 /* 97_Interleaving_String.cpp */,
 				8D211F911CF9A0D300E701D2 /* 98_Validate_Binary_Search_Tree.cpp */,
 				8D211F931CF9E04100E701D2 /* 100_Same_Tree.cpp */,
+				8D211F951CF9E1AC00E701D2 /* 101_Symmetric_Tree.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				8D1E0FA21CE3848900ED73AB /* 61_Rotate_List.cpp in Sources */,
 				8D1CFF911CD8ED23007D100B /* 55_Jump_Game.cpp in Sources */,
 				8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */,
+				8D211F961CF9E1AC00E701D2 /* 101_Symmetric_Tree.cpp in Sources */,
 				8D111A281CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp in Sources */,
 				8D111A2A1CE8B81B0038C9B4 /* 75_Sort_Colors.cpp in Sources */,
 				8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */,
