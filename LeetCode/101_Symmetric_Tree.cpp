@@ -19,13 +19,6 @@
  Bonus points if you could solve it both recursively and iteratively.
 */
 namespace SymmetricTree{
-    struct TreeNode {
-        int val;
-        TreeNode *left;
-        TreeNode *right;
-        TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-    };
-    
     class Solution {
     public:
         bool isSymmetric(TreeNode* root){
