@@ -23,7 +23,32 @@ namespace UniqueBinarySearchTree2{
     class Solution {
     public:
         vector<TreeNode*> generateTrees(int n) {
+            if(n <= 0)
+                return {};
+            return subTree(1, n);
+        }
+    private:
+        vector<TreeNode*> subTree(int start, int end){
+            vector<TreeNode*> ans;
+            if(start > end){
+                ans.push_back(NULL);
+                return ans;
+            }
             
+            for(int i = start; i <= end; ++ i){
+                auto leftTree = subTree(start, i - 1);
+                auto rightTree = subTree(i + 1, end);
+                for(int j = 0; j < leftTree.size(); ++ j){
+                    for(int k = 0; k < rightTree.size(); ++ k){
+                        TreeNode* root = new TreeNode(i);
+                        root->left = leftTree[j];
+                        root->right = rightTree[k];
+                        ans.push_back(root);
+                    }
+                }
+                
+            }
+            return ans;
         }
     };
 }
