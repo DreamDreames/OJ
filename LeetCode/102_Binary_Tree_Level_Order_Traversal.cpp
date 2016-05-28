@@ -20,7 +20,24 @@ namespace BinaryTreeLevelOrderTraversal{
 
     class Solution {
     public:
-        vector<vector<int>> levelOrder(TreeNode* root) {
+        vector<vector<int>> levelOrder(TreeNode* root){
+            vector<vector<int>> ans;
+            traverse(root, 0, ans);
+            return ans;
+        }
+    private:
+        void traverse(TreeNode* root, int level, vector<vector<int>>& ans){
+            if(root == NULL)
+                return;
+                
+            if(level == ans.size())
+                ans.push_back({});
+            
+            ans[level].push_back(root->val);
+            traverse(root->left, level + 1, ans);
+            traverse(root->right, level + 1, ans);
+        }
+        vector<vector<int>> levelOrder1(TreeNode* root) {
             vector<vector<int>> ans;
             if(root == NULL)
                 return ans;
