@@ -36,15 +36,13 @@ namespace InterleavingString{
             
             if(i1 > s1.length() || i2 > s2.length())
                 return false;
+            
             if(record[i1][i2] >= 0)
                 return record[i1][i2];
             
             bool result = false;
-            bool temp1 = (s3[i3] == s1[i1] && validate(s1, s2, s3, i1 + 1, i2, i3 + 1, record));
-            
-            bool temp2 = (s3[i3] == s2[i2] && validate(s1, s2, s3, i1, i2 + 1, i3 + 1, record));
-            
-            result = temp1 || temp2;
+            result = (s3[i3] == s1[i1] && validate(s1, s2, s3, i1 + 1, i2, i3 + 1, record)) ||
+                (s3[i3] == s2[i2] && validate(s1, s2, s3, i1, i2 + 1, i3 + 1, record));
             
             record[i1][i2] = result;
             return result;
@@ -64,6 +62,5 @@ namespace InterleavingString{
         h.test("aabcc", "dbbca", "aadbbcbcac", true);
         h.test("aabcc", "dbbca", "aadbbbaccc", false);
         h.test("aa", "ab", "abaa", true);
-        h.test("baababbabbababbaaababbbbbbbbbbbaabaabaaaabaaabbaaabaaaababaabaaabaabbbbaabbaabaabbbbabbbababbaaaabab", "aababaaabbbababababaabbbababaababbababbbbabbbbbababbbabaaaaabaaabbabbaaabbababbaaaababaababbbbabbbbb", "babbabbabbababbaaababbbbaababbaabbbbabbbbbaaabbabaababaabaaabaabbbaaaabbabbaaaaabbabbaabaaaabbbbababbbababbabaabababbababaaaaaabbababaaabbaabbbbaaaaabbbaaabbbabbbbaaabaababbaabababbbbababbaaabbbabbbab", false);
     }
 }
