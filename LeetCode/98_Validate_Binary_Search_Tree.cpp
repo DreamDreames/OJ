@@ -20,26 +20,28 @@ namespace ValidateBinarySearchTree {
     class Solution {
     public:
         bool isValidBST(TreeNode* root){
-            bool inited = false;
-            int prev = 0;
-            return inorderTraverse(root, prev, inited);
+            TreeNode* prev = NULL;
+            return inorderTraverse(root, &prev);
         }
     public:
-        bool inorderTraverse(TreeNode* root, int& prev, bool& inited){
+        bool inorderTraverse(TreeNode* root, TreeNode** prev){
             if(root == NULL)
                 return true;
-            if(!inorderTraverse(root->left, prev, inited))
+            if(!inorderTraverse(root->left, prev))
                 return false;
-            if(!inited){
-                inited = true;
-                prev = root->val;
-            }
-            else{
-                if(root->val <= prev)
-                    return false;
-                prev = root->val;
-            }
-            return inorderTraverse(root->right, prev, inited);
+            if(*prev != NULL && (*prev)->val >= root->val)
+                return false;
+            *prev = root;
+            return inorderTraverse(root->right, prev);
         }
     };
+    
+    TEST(ValidateBinarySearchTree, isValidBST){
+        auto root = new TreeNode(1);
+        auto left = new TreeNode(1);
+        root->left = left;
+        Solution sln;
+        auto actual = sln.isValidBST(root);
+        ASSERT_EQ(false, actual);
+    }
 }
