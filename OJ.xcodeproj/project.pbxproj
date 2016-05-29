@@ -54,6 +54,7 @@
 		8D211F981CF9EC8200E701D2 /* 102_Binary_Tree_Level_Order_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F971CF9EC8200E701D2 /* 102_Binary_Tree_Level_Order_Traversal.cpp */; };
 		8D211F9A1CF9F24D00E701D2 /* 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F991CF9F24D00E701D2 /* 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp */; };
 		8D211F9C1CF9F41D00E701D2 /* 104_Maximum_Depth_Of_Binary_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F9B1CF9F41D00E701D2 /* 104_Maximum_Depth_Of_Binary_Tree.cpp */; };
+		8D211F9E1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D211F9D1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp */; };
 		8D30BCA11CE0AD2900F79D18 /* 51_N_Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */; };
 		8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */; };
 		8D30BCA61CE0C68600F79D18 /* 53_Maximum_Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D30BCA51CE0C68600F79D18 /* 53_Maximum_Subarray.cpp */; };
@@ -139,6 +140,7 @@
 		8D211F971CF9EC8200E701D2 /* 102_Binary_Tree_Level_Order_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 102_Binary_Tree_Level_Order_Traversal.cpp; path = LeetCode/102_Binary_Tree_Level_Order_Traversal.cpp; sourceTree = "<group>"; };
 		8D211F991CF9F24D00E701D2 /* 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp; path = LeetCode/103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp; sourceTree = "<group>"; };
 		8D211F9B1CF9F41D00E701D2 /* 104_Maximum_Depth_Of_Binary_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 104_Maximum_Depth_Of_Binary_Tree.cpp; path = LeetCode/104_Maximum_Depth_Of_Binary_Tree.cpp; sourceTree = "<group>"; };
+		8D211F9D1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 99_Recover_Binary_Search_Tree.cpp; path = LeetCode/99_Recover_Binary_Search_Tree.cpp; sourceTree = "<group>"; };
 		8D30BCA01CE0AD2900F79D18 /* 51_N_Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 51_N_Queens.cpp; path = LeetCode/51_N_Queens.cpp; sourceTree = "<group>"; };
 		8D30BCA21CE0BDE000F79D18 /* 52_N_Queens_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 52_N_Queens_2.cpp; path = LeetCode/52_N_Queens_2.cpp; sourceTree = "<group>"; };
 		8D30BCA41CE0C61D00F79D18 /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				8D211F971CF9EC8200E701D2 /* 102_Binary_Tree_Level_Order_Traversal.cpp */,
 				8D211F991CF9F24D00E701D2 /* 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp */,
 				8D211F9B1CF9F41D00E701D2 /* 104_Maximum_Depth_Of_Binary_Tree.cpp */,
+				8D211F9D1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				8D111A281CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp in Sources */,
 				8D111A2A1CE8B81B0038C9B4 /* 75_Sort_Colors.cpp in Sources */,
 				8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */,
+				8D211F9E1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp in Sources */,
 				8D111A371CEB75F60038C9B4 /* 80_Remove_Duplicates_From_Sorted_Array2.cpp in Sources */,
 				8D111A391CEB7B3F0038C9B4 /* 81_Search_in_Rotated_Sorted_Array2.cpp in Sources */,
 				8DFFAC681CF19A6C0027E2CC /* 85_Maximal_Rectangle.cpp in Sources */,
