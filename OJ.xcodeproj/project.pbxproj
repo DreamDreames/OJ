@@ -62,6 +62,7 @@
 		8D366EB31CF5FC00006137BF /* 94_Binary_Tree_Inorder_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D366EB21CF5FC00006137BF /* 94_Binary_Tree_Inorder_Traversal.cpp */; };
 		8D3C793F1CF492610003AA1A /* 91_Decode_Ways.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C793E1CF492610003AA1A /* 91_Decode_Ways.cpp */; };
 		8D3C79411CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C79401CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp */; };
+		8D5694771CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D5694761CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp */; };
 		8D60A6FB1CE6437600B8DE7E /* 67_Add_Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */; };
 		8D60A6FD1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FC1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp */; };
 		8D60A6FF1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FE1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp */; };
@@ -149,6 +150,7 @@
 		8D366EB21CF5FC00006137BF /* 94_Binary_Tree_Inorder_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 94_Binary_Tree_Inorder_Traversal.cpp; path = LeetCode/94_Binary_Tree_Inorder_Traversal.cpp; sourceTree = "<group>"; };
 		8D3C793E1CF492610003AA1A /* 91_Decode_Ways.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 91_Decode_Ways.cpp; path = LeetCode/91_Decode_Ways.cpp; sourceTree = "<group>"; };
 		8D3C79401CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 92_Reverse_Linked_List2.cpp; path = LeetCode/92_Reverse_Linked_List2.cpp; sourceTree = "<group>"; };
+		8D5694761CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp; path = LeetCode/105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp; sourceTree = "<group>"; };
 		8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 67_Add_Binary.cpp; path = LeetCode/67_Add_Binary.cpp; sourceTree = "<group>"; };
 		8D60A6FC1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 70_Climbing_Stairs.cpp; path = LeetCode/70_Climbing_Stairs.cpp; sourceTree = "<group>"; };
 		8D60A6FE1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 71_Simplify_Path.cpp; path = LeetCode/71_Simplify_Path.cpp; sourceTree = "<group>"; };
@@ -271,12 +273,13 @@
 				8D211F8D1CF9853700E701D2 /* 96_Unique_Binary_Search_Trees.cpp */,
 				8D211F8F1CF9896500E701D2 /* 97_Interleaving_String.cpp */,
 				8D211F911CF9A0D300E701D2 /* 98_Validate_Binary_Search_Tree.cpp */,
+				8D211F9D1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp */,
 				8D211F931CF9E04100E701D2 /* 100_Same_Tree.cpp */,
 				8D211F951CF9E1AC00E701D2 /* 101_Symmetric_Tree.cpp */,
 				8D211F971CF9EC8200E701D2 /* 102_Binary_Tree_Level_Order_Traversal.cpp */,
 				8D211F991CF9F24D00E701D2 /* 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp */,
 				8D211F9B1CF9F41D00E701D2 /* 104_Maximum_Depth_Of_Binary_Tree.cpp */,
-				8D211F9D1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp */,
+				8D5694761CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				8D111A311CEA2E8F0038C9B4 /* 77_Combinations.cpp in Sources */,
 				8D211F9A1CF9F24D00E701D2 /* 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp in Sources */,
 				8D1E0FA01CE378FA00ED73AB /* 60_Permutation_Sequence.cpp in Sources */,
+				8D5694771CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
 				8D211F941CF9E04100E701D2 /* 100_Same_Tree.cpp in Sources */,
 				8D1E0FA41CE38A6900ED73AB /* 62_Unique_Paths.cpp in Sources */,
