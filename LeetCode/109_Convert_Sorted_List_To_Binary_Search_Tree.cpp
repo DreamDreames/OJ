@@ -16,11 +16,10 @@ namespace ConvertSortedListToBinarySearchTree{
             }
             if(pre != NULL)
                 pre->next = NULL;
-            TreeNode* root = new TreeNode(slow->val);
-            if(slow == head)
-                root->left = NULL;
             else
-                root->left = sortedListToBST(head);
+                head = NULL;
+            TreeNode* root = new TreeNode(slow->val);
+            root->left = sortedListToBST(head);
             root->right = sortedListToBST(slow->next);
             return root;
         }
