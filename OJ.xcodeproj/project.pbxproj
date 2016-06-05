@@ -73,6 +73,7 @@
 		8D83A2E71D008903002DC93F /* 118_Pascal_Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D83A2E61D008903002DC93F /* 118_Pascal_Triangle.cpp */; };
 		8D83A2E91D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D83A2E81D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp */; };
 		8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */; };
+		8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */; };
 		8DC3D0C11CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3D0C01CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp */; };
 		8DC5FF281CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */; };
 		8DC5FF2A1CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */; };
@@ -173,6 +174,7 @@
 		8D83A2E61D008903002DC93F /* 118_Pascal_Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 118_Pascal_Triangle.cpp; path = LeetCode/118_Pascal_Triangle.cpp; sourceTree = "<group>"; };
 		8D83A2E81D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 119_Pascal_Triangle_2.cpp; path = LeetCode/119_Pascal_Triangle_2.cpp; sourceTree = "<group>"; };
 		8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 90_Subset2.cpp; path = LeetCode/90_Subset2.cpp; sourceTree = "<group>"; };
+		8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 116_Populating_Next_Right_Pointers_in_Each_Node.cpp; path = LeetCode/116_Populating_Next_Right_Pointers_in_Each_Node.cpp; sourceTree = "<group>"; };
 		8DC3D0C01CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 95_Unique_Binary_Search_Tree2.cpp; path = LeetCode/95_Unique_Binary_Search_Tree2.cpp; sourceTree = "<group>"; };
 		8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 82_Remove_Duplicates_From_Sorted_List2.cpp; path = LeetCode/82_Remove_Duplicates_From_Sorted_List2.cpp; sourceTree = "<group>"; };
 		8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 83_Remove_Duplicates_From_Sorted_List.cpp; path = LeetCode/83_Remove_Duplicates_From_Sorted_List.cpp; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				8D83A2E01CFEF820002DC93F /* 113_Path_Sum_2.cpp */,
 				8D83A2E21CFEFB50002DC93F /* 114_Flatten_Binary_Tree_To_Linked_List.cpp */,
 				8D83A2E41CFEFDD3002DC93F /* 115_Distinct_Subsequences.cpp */,
+				8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */,
 				8D83A2E61D008903002DC93F /* 118_Pascal_Triangle.cpp */,
 				8D83A2E81D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp */,
 			);
@@ -486,6 +489,7 @@
 				8DC5FF2A1CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp in Sources */,
 				8D1E0F9E1CE36E8800ED73AB /* 59_Spiral_Matrix_2.cpp in Sources */,
 				8D1CFF971CDB9D03007D100B /* 47_Permutations_2.cpp in Sources */,
+				8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */,
 				8D3C79411CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp in Sources */,
 				8D83A2E71D008903002DC93F /* 118_Pascal_Triangle.cpp in Sources */,
 				8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */,
