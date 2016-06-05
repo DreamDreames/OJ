@@ -74,6 +74,7 @@
 		8D83A2E91D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D83A2E81D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp */; };
 		8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */; };
 		8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */; };
+		8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */; };
 		8DC3D0C11CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3D0C01CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp */; };
 		8DC5FF281CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */; };
 		8DC5FF2A1CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */; };
@@ -175,6 +176,7 @@
 		8D83A2E81D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 119_Pascal_Triangle_2.cpp; path = LeetCode/119_Pascal_Triangle_2.cpp; sourceTree = "<group>"; };
 		8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 90_Subset2.cpp; path = LeetCode/90_Subset2.cpp; sourceTree = "<group>"; };
 		8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 116_Populating_Next_Right_Pointers_in_Each_Node.cpp; path = LeetCode/116_Populating_Next_Right_Pointers_in_Each_Node.cpp; sourceTree = "<group>"; };
+		8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; path = LeetCode/117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; sourceTree = "<group>"; };
 		8DC3D0C01CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 95_Unique_Binary_Search_Tree2.cpp; path = LeetCode/95_Unique_Binary_Search_Tree2.cpp; sourceTree = "<group>"; };
 		8DC5FF271CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 82_Remove_Duplicates_From_Sorted_List2.cpp; path = LeetCode/82_Remove_Duplicates_From_Sorted_List2.cpp; sourceTree = "<group>"; };
 		8DC5FF291CECBB89004369DF /* 83_Remove_Duplicates_From_Sorted_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 83_Remove_Duplicates_From_Sorted_List.cpp; path = LeetCode/83_Remove_Duplicates_From_Sorted_List.cpp; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */,
 				8D83A2E61D008903002DC93F /* 118_Pascal_Triangle.cpp */,
 				8D83A2E81D008C2B002DC93F /* 119_Pascal_Triangle_2.cpp */,
+				8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				8D211F9C1CF9F41D00E701D2 /* 104_Maximum_Depth_Of_Binary_Tree.cpp in Sources */,
 				8D1E0FA21CE3848900ED73AB /* 61_Rotate_List.cpp in Sources */,
 				8D1CFF911CD8ED23007D100B /* 55_Jump_Game.cpp in Sources */,
+				8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */,
 				8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */,
 				8D211F961CF9E1AC00E701D2 /* 101_Symmetric_Tree.cpp in Sources */,
 				8DF5C81A1CFDD40F00A1B5A6 /* 110_Balanced_Binary_Tree.cpp in Sources */,
