@@ -11,39 +11,44 @@ namespace BestTimeToBuyAndSellStock3 {
     class Solution {
     public:
         int maxProfit(vector<int>& prices) {
-            if(prices.size() == 0)
-                return 0;
-            int minIndex = -1, maxIndex = -1;
-            int ans = profit(prices, minIndex, maxIndex);
-            if(ans == 0)
-                return ans;
-            return ans + profit(prices, minIndex, maxIndex);
-        }
-    private:
-        int profit(vector<int>& prices, int& minIndex, int& maxIndex){
-            int escape1 = minIndex, escape2 = maxIndex;
-            int minValue = INT_MAX, maxValue = -1, tempMinIndex = -1, profit = 0;
+            int minValue = INT_MAX, maxValue = -1, leftProfit = 0, profit = 0;
             for(int i = 0; i < prices.size(); ++ i){
-                if(i == escape1 || i == escape2)
-                    continue;
-                
+                if(i > 0 && prices[i] < prices[i - 1]){
+                    int rightMinValue = INT_MAX, rightMaxValue = -1, rightProfit = 0;
+                    for(int j = i; j < prices.size(); ++ j){
+                        if(prices[j] < rightMinValue){
+                            rightMinValue = prices[j];
+                            rightMaxValue = rightMinValue;
+                        }
+                        if(prices[j] > rightMaxValue){
+                            rightMaxValue = prices[j];
+                            int temp = rightMaxValue - rightMinValue;
+                            if(temp > rightProfit)
+                                rightProfit = temp;
+                        }
+                    }
+                    if(rightProfit == 0)
+                        return profit;
+                    profit = max(leftProfit + rightProfit, profit);
+                    //continue;
+                }
                 if(prices[i] < minValue){
                     minValue = prices[i];
-                    tempMinIndex = i;
-                    maxValue = prices[i];
+                    maxValue = minValue;
                 }
-                else if(prices[i] > maxValue){
+                if(prices[i] > maxValue){
                     maxValue = prices[i];
                     int temp = maxValue - minValue;
-                    if(profit < temp){
-                        profit = temp;
-                        maxIndex = i;
-                        minIndex = tempMinIndex;
+                    if(temp > leftProfit){
+                        leftProfit = temp;
+                        if(leftProfit > profit)
+                            profit = leftProfit;
                     }
                 }
             }
             return profit;
         }
+
     };
     class helper{
     public:
@@ -57,6 +62,8 @@ namespace BestTimeToBuyAndSellStock3 {
         helper h;
         h.test({1,2,4,2,5,7,2,4,9,0}, 13);
         h.test({1,3,2,7}, 7);
+        h.test({1,2,4}, 3);
+        h.test({6,1,3,2,4,7}, 7);
     }
 }
 /*
