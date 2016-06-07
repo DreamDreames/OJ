@@ -11,33 +11,53 @@ namespace BestTimeToBuyAndSellStock3 {
     class Solution {
     public:
         int maxProfit(vector<int>& prices) {
-            vector<int> transactions(2, 0);
-            calculateFrom(0, prices, transactions);
-            return transactions[0] + transactions[1];
+            if(prices.size() == 0)
+                return 0;
+            int minIndex = -1, maxIndex = -1;
+            int ans = profit(prices, minIndex, maxIndex);
+            if(ans == 0)
+                return ans;
+            return ans + profit(prices, minIndex, maxIndex);
         }
     private:
-        void calculateFrom(int start, vector<int>& prices, vector<int>& transactions){
-            if(start >= prices.size())
-                return;
-            int minValue = prices[start], maxValue = prices[start], index = start + 1, profit = 0;
-            while(index < prices.size()){
-                if(prices[index] < prices[index - 1]){
-                    break;
+        int profit(vector<int>& prices, int& minIndex, int& maxIndex){
+            int escape1 = minIndex, escape2 = maxIndex;
+            int minValue = INT_MAX, maxValue = -1, tempMinIndex = -1, profit = 0;
+            for(int i = 0; i < prices.size(); ++ i){
+                if(i == escape1 || i == escape2)
+                    continue;
+                
+                if(prices[i] < minValue){
+                    minValue = prices[i];
+                    tempMinIndex = i;
+                    maxValue = prices[i];
                 }
-                if(prices[index] > maxValue){
-                    maxValue = prices[index];
-                    profit = maxValue - minValue;
+                else if(prices[i] > maxValue){
+                    maxValue = prices[i];
+                    int temp = maxValue - minValue;
+                    if(profit < temp){
+                        profit = temp;
+                        maxIndex = i;
+                        minIndex = tempMinIndex;
+                    }
                 }
-                index ++;
             }
-            if(profit > transactions[0]){
-                transactions[0] = profit;
-                if(transactions[1] < transactions[0])
-                    swap(transactions[0], transactions[1]);
-            }
-            return calculateFrom(index, prices, transactions);
+            return profit;
         }
     };
+    class helper{
+    public:
+        void test(vector<int> input, int expected){
+            Solution sln;
+            int actual = sln.maxProfit(input);
+            ASSERT_EQ(expected, actual);
+        }
+    };
+    TEST(BestTimeToBuyAndSellStock3, maxProfit){
+        helper h;
+        h.test({1,2,4,2,5,7,2,4,9,0}, 13);
+        h.test({1,3,2,7}, 7);
+    }
 }
 /*
  [1,2]
