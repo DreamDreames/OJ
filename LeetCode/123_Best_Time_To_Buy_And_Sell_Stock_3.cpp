@@ -29,8 +29,11 @@ namespace BestTimeToBuyAndSellStock3 {
                     }
                     if(rightProfit == 0)
                         return profit;
-                    profit = max(leftProfit + rightProfit, profit);
-                    //continue;
+                    if(leftProfit + rightProfit >= profit)
+                        profit = leftProfit + rightProfit;
+                    else
+                        return profit;
+                    //profit = max(leftProfit + rightProfit, profit);
                 }
                 if(prices[i] < minValue){
                     minValue = prices[i];
