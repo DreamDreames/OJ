@@ -77,6 +77,7 @@
 		8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */; };
 		8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */; };
 		8DB045BD1D047CCC008A92C8 /* 120_Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BC1D047CCC008A92C8 /* 120_Triangle.cpp */; };
+		8DBA2E8C1D0C596500075FFB /* 125_Valid_Palindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA2E8B1D0C596500075FFB /* 125_Valid_Palindrome.cpp */; };
 		8DC025C71D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC025C61D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp */; };
 		8DC025C91D05CD060027626F /* 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC025C81D05CD060027626F /* 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp */; };
 		8DC3D0C11CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3D0C01CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp */; };
@@ -183,6 +184,7 @@
 		8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 116_Populating_Next_Right_Pointers_in_Each_Node.cpp; path = LeetCode/116_Populating_Next_Right_Pointers_in_Each_Node.cpp; sourceTree = "<group>"; };
 		8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; path = LeetCode/117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; sourceTree = "<group>"; };
 		8DB045BC1D047CCC008A92C8 /* 120_Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 120_Triangle.cpp; path = LeetCode/120_Triangle.cpp; sourceTree = "<group>"; };
+		8DBA2E8B1D0C596500075FFB /* 125_Valid_Palindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 125_Valid_Palindrome.cpp; path = LeetCode/125_Valid_Palindrome.cpp; sourceTree = "<group>"; };
 		8DC025C61D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 121_Best_Time_To_Buy_And_Sell_Stock.cpp; path = LeetCode/121_Best_Time_To_Buy_And_Sell_Stock.cpp; sourceTree = "<group>"; };
 		8DC025C81D05CD060027626F /* 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp; path = LeetCode/122_Best_Time_To_Buy_And_Sell_Stock_2.cpp; sourceTree = "<group>"; };
 		8DC3D0C01CF74F1F00C71F17 /* 95_Unique_Binary_Search_Tree2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 95_Unique_Binary_Search_Tree2.cpp; path = LeetCode/95_Unique_Binary_Search_Tree2.cpp; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				8DC025C61D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp */,
 				8DC025C81D05CD060027626F /* 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp */,
 				8D20634D1D0722660052BA4B /* 123_Best_Time_To_Buy_And_Sell_Stock_3.cpp */,
+				8DBA2E8B1D0C596500075FFB /* 125_Valid_Palindrome.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				8D1CFF8B1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp in Sources */,
 				8D60A6FF1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp in Sources */,
 				8DC5FF2E1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp in Sources */,
+				8DBA2E8C1D0C596500075FFB /* 125_Valid_Palindrome.cpp in Sources */,
 				8DEB7F9A1CFC8B130038EAD7 /* 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp in Sources */,
 				8D20634E1D0722660052BA4B /* 123_Best_Time_To_Buy_And_Sell_Stock_3.cpp in Sources */,
 				8D1CFF8F1CD7A5FE007D100B /* 44_Wildcard_Matching.cpp in Sources */,
