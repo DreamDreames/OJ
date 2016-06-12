@@ -1,4 +1,5 @@
 #include "shared.h"
+#include <list>
 /*
  Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
  
@@ -22,16 +23,57 @@ namespace WordLadder{
     class Solution {
     public:
         int ladderLength(string beginWord, string endWord, unordered_set<string>& wordList) {
-            unordered_set<string> traversed;
-            unordered_map<string, int> record;
-            for(auto iter = wordList.begin(); iter != wordList.end(); ++ iter){
-                
+            if(canConcat(beginWord, endWord))
+                return 2;
+            
+            int size = (int)wordList.size() + 2;
+            vector<vector<int>> matrix (size, vector<int>(size, -1));
+            wordList.insert(beginWord);
+            wordList.insert(endWord);
+            int startPos = 0, endPos = 0;
+            auto iter1 = wordList.begin(), iter2 = wordList.begin();
+            for(int i = 0; i < size; ++ i, ++ iter1){
+                if(*iter1 == beginWord)
+                    startPos = i;
+                else if(*iter1 == endWord)
+                    endPos = i;
+                for(int j = 0; j < size; ++ j, ++ iter2){
+                    if(i == j)
+                        matrix[j][i] = matrix[i][j] = 0;
+                    else if(canConcat(*iter1, *iter2))
+                        matrix[j][i] = matrix[i][j] = 1;
+                }
             }
-            int currentShortest = (int)wordList.size() + 3;
-            int ans = iterLadderLength(beginWord, endWord, wordList, traversed, currentShortest);
-            if(ans > wordList.size() + 2)
+            
+            unordered_set<int> traversed;
+            list<int> untraversed;
+            for(int i = 0; i < size; ++ i){
+                if(i != startPos)
+                    untraversed.push_back(i);
+            }
+            queue<int> q;
+            q.push(startPos);
+            while(!q.empty()){
+                int current = q.front();
+                q.pop();
+                for(auto iter = untraversed.begin(); iter != untraversed.end(); ++ iter){
+                    int index = *iter;
+                    if(index == current || traversed.find(index) != traversed.end())
+                        continue;
+                    if(matrix[current][index] == 1){
+                        q.push(index);
+                        for(auto iter = traversed.begin(); iter != traversed.end(); ++ iter){
+                            int temp = *iter;
+                            matrix[temp][index] = matrix[temp][current] + 1;
+                        }
+                    }
+                }
+                traversed.insert(current);
+                untraversed.remove(current);
+            }
+            if(matrix[startPos][endPos] == -1)
                 return 0;
-            return ans;
+            return matrix[startPos][endPos];
         }
      private:
         bool canConcat(const string& word1, const string& word2){
@@ -43,29 +85,6 @@ namespace WordLadder{
                 }
             }
             return true;
-        }
-        int iterLadderLength(const string& startWord, const string& endWord, unordered_set<string>& wordList, unordered_set<string>& traversed, int currentShortest){
-            if(canConcat(startWord, endWord))
-                return 2;
-            if(traversed.size() + 2 >= currentShortest)
-                return currentShortest;
-            
-            for(auto iter = wordList.begin(); iter != wordList.end(); ++iter){
-                if(traversed.find(*iter) != traversed.end())
-                    continue;
-                if(canConcat(startWord, *iter)){
-                    string current = *iter;
-                    traversed.insert(*iter);
-                    int temp = iterLadderLength(*iter, endWord, wordList, traversed, currentShortest);
-                    if(temp < wordList.size() + 3)
-                        temp ++;
-                    if(temp < currentShortest){
-                        currentShortest = temp;
-                    }
-                    traversed.erase(*iter);
-                }
-            }
-            return currentShortest;
         }
     };
     class helper{
