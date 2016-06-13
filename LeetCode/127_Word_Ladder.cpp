@@ -1,4 +1,5 @@
-#include "shared.h"
+#include "stdafx.h"
+#include <queue>
 #include <list>
 /*
  Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
@@ -31,12 +32,13 @@ namespace WordLadder{
             wordList.insert(beginWord);
             wordList.insert(endWord);
             int startPos = 0, endPos = 0;
-            auto iter1 = wordList.begin(), iter2 = wordList.begin();
+            auto iter1 = wordList.begin();
             for(int i = 0; i < size; ++ i, ++ iter1){
                 if(*iter1 == beginWord)
                     startPos = i;
                 else if(*iter1 == endWord)
                     endPos = i;
+				auto iter2 = wordList.begin();
                 for(int j = 0; j < size; ++ j, ++ iter2){
                     if(i == j)
                         matrix[j][i] = matrix[i][j] = 0;
@@ -47,9 +49,8 @@ namespace WordLadder{
             
             unordered_set<int> traversed;
             list<int> untraversed;
-            for(int i = 0; i < size; ++ i){
-                if(i != startPos)
-                    untraversed.push_back(i);
+            for(int i = 0; i < size; ++ i){ 
+				untraversed.push_back(i);
             }
             queue<int> q;
             q.push(startPos);
@@ -66,6 +67,9 @@ namespace WordLadder{
                             int temp = *iter;
                             matrix[temp][index] = matrix[temp][current] + 1;
                         }
+						if (index == endPos){
+							return matrix[startPos][endPos];
+						}
                     }
                 }
                 traversed.insert(current);
@@ -96,9 +100,22 @@ namespace WordLadder{
                 wordSet.insert(*iter);
             }
             int actual = sln.ladderLength(startWord, endWord, wordSet);
-            ASSERT_EQ(expected, actual);
+            //ASSERT_EQ(expected, actual);
+			Assert::AreEqual(expected, actual);
         }
     };
+	TEST_CLASS(ladderLength){
+	public:
+		TEST_METHOD(WordLadder){
+			helper  h;
+			h.test("hit", "abc", {}, 0);
+			h.test("hit", "hot", {}, 2);
+			h.test("hit", "dot", { "hot", "abc" }, 3);
+			h.test("hit", "cog", { "hot", "dot", "dog", "lot", "log" }, 5);
+			h.test("qa", "sq", { "si", "go", "se", "cm", "so", "ph", "mt", "db", "mb", "sb", "kr", "ln", "tm", "le", "av", "sm", "ar", "ci", "ca", "br", "ti", "ba", "to", "ra", "fa", "yo", "ow", "sn", "ya", "cr", "po", "fe", "ho", "ma", "re", "or", "rn", "au", "ur", "rh", "sr", "tc", "lt", "lo", "as", "fr", "nb", "yb", "if", "pb", "ge", "th", "pm", "rb", "sh", "co", "ga", "li", "ha", "hz", "no", "bi", "di", "hi", "qa", "pi", "os", "uh", "wm", "an", "me", "mo", "na", "la", "st", "er", "sc", "ne", "mn", "mi", "am", "ex", "pt", "io", "be", "fm", "ta", "tb", "ni", "mr", "pa", "he", "lr", "sq", "ye" }, 5);
+		}
+	};
+	/*
     TEST(WordLadder, ladderLength){
         helper  h;
         h.test("hit", "abc", {}, 0);
@@ -108,4 +125,5 @@ namespace WordLadder{
         h.test("qa", "sq", {"si","go","se","cm","so","ph","mt","db","mb","sb","kr","ln","tm","le","av","sm","ar","ci","ca","br","ti","ba","to","ra","fa","yo","ow","sn","ya","cr","po","fe","ho","ma","re","or","rn","au","ur","rh","sr","tc","lt","lo","as","fr","nb","yb","if","pb","ge","th","pm","rb","sh","co","ga","li","ha","hz","no","bi","di","hi","qa","pi","os","uh","wm","an","me","mo","na","la","st","er","sc","ne","mn","mi","am","ex","pt","io","be","fm","ta","tb","ni","mr","pa","he","lr","sq","ye" }, 5);
 
     }
+	*/
 }
