@@ -15,6 +15,7 @@
 		8D0AA1301D0EFB8F00417C80 /* 130_Surrounded_Regions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AA12F1D0EFB8F00417C80 /* 130_Surrounded_Regions.cpp */; };
 		8D0AA1321D0F07B500417C80 /* 131_Palindrome_Partitioning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AA1311D0F07B500417C80 /* 131_Palindrome_Partitioning.cpp */; };
 		8D0AA1341D0F0F3F00417C80 /* 133_Clone_Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AA1331D0F0F3F00417C80 /* 133_Clone_Graph.cpp */; };
+		8D0E92221D10586B0085680B /* 134_Gas_Station.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */; };
 		8D111A241CE7724B0038C9B4 /* 72_Edit_Distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */; };
 		8D111A261CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */; };
 		8D111A281CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A271CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp */; };
@@ -126,6 +127,7 @@
 		8D0AA12F1D0EFB8F00417C80 /* 130_Surrounded_Regions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 130_Surrounded_Regions.cpp; path = LeetCode/130_Surrounded_Regions.cpp; sourceTree = "<group>"; };
 		8D0AA1311D0F07B500417C80 /* 131_Palindrome_Partitioning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 131_Palindrome_Partitioning.cpp; path = LeetCode/131_Palindrome_Partitioning.cpp; sourceTree = "<group>"; };
 		8D0AA1331D0F0F3F00417C80 /* 133_Clone_Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 133_Clone_Graph.cpp; path = LeetCode/133_Clone_Graph.cpp; sourceTree = "<group>"; };
+		8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 134_Gas_Station.cpp; path = LeetCode/134_Gas_Station.cpp; sourceTree = "<group>"; };
 		8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 72_Edit_Distance.cpp; path = LeetCode/72_Edit_Distance.cpp; sourceTree = "<group>"; };
 		8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 73_Set_Matrix_Zeroes.cpp; path = LeetCode/73_Set_Matrix_Zeroes.cpp; sourceTree = "<group>"; };
 		8D111A271CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 74_Search_a_2D_Matrix.cpp; path = LeetCode/74_Search_a_2D_Matrix.cpp; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				8D0AA12F1D0EFB8F00417C80 /* 130_Surrounded_Regions.cpp */,
 				8D0AA1311D0F07B500417C80 /* 131_Palindrome_Partitioning.cpp */,
 				8D0AA1331D0F0F3F00417C80 /* 133_Clone_Graph.cpp */,
+				8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				8D1E0FA81CE4D0DE00ED73AB /* 64_Minimum_Path_Sum.cpp in Sources */,
 				8D211F9C1CF9F41D00E701D2 /* 104_Maximum_Depth_Of_Binary_Tree.cpp in Sources */,
 				8D1E0FA21CE3848900ED73AB /* 61_Rotate_List.cpp in Sources */,
+				8D0E92221D10586B0085680B /* 134_Gas_Station.cpp in Sources */,
 				8D1CFF911CD8ED23007D100B /* 55_Jump_Game.cpp in Sources */,
 				8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */,
 				8D1CFF951CDB88B8007D100B /* 46_Permutations.cpp in Sources */,
