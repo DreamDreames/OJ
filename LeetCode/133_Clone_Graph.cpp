@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "shared.h"
 /*
  Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
  
@@ -33,29 +33,42 @@ namespace CloneGraph {
     class Solution {
     public:
         UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
-			unordered_map<int, unordered_set<int>> record;
-			return cloneNeighbor(node, record);
+            if(node == NULL)
+                return NULL;
+            
+            unordered_map<UndirectedGraphNode*, UndirectedGraphNode*> nodeMap;
+            queue<UndirectedGraphNode*> toVisit;
+            toVisit.push(node);
+            auto newNode = new UndirectedGraphNode(node->label);
+            nodeMap[node] = newNode;
+            while(!toVisit.empty()){
+                auto current = toVisit.front();
+                toVisit.pop();
+                auto currentCopy = nodeMap[current];
+                for(int i = 0; i < current->neighbors.size(); ++ i){
+                    auto neighbor = current->neighbors[i];
+                    if(nodeMap.find(neighbor) != nodeMap.end()){
+                        currentCopy->neighbors.push_back(nodeMap[neighbor]);
+                    }
+                    else{
+                        auto neighborCopy = new UndirectedGraphNode(neighbor->label);
+                        nodeMap[neighbor] = neighborCopy;
+                        toVisit.push(neighbor);
+                        currentCopy->neighbors.push_back(neighborCopy);
+                    }
+                }
+            }
+            return newNode;
         }
-	private:
-		UndirectedGraphNode *cloneNeighbor(UndirectedGraphNode* node, unordered_map<int, unordered_set<int>>& record){
-			if (node == NULL)
-				return NULL;
 
-			auto newNode = new UndirectedGraphNode(node->label);
-			for (auto neighbor : node->neighbors){
-				if (neighbor != NULL){
-					int minLabel = node->label, maxLabel = neighbor->label;
-					if (minLabel > maxLabel)
-						swap(minLabel, maxLabel);
-					if (record[minLabel].find(maxLabel) != record[minLabel].end())
-						record[minLabel].insert(maxLabel);
-					else
-						continue;
-				}
-				UndirectedGraphNode* newNeighbor = cloneNeighbor(neighbor, record);
-				newNode->neighbors.push_back(newNeighbor);
-			}
-			return newNode;
-		}
     };
+    
+    TEST(CloneGraph, clone){
+        UndirectedGraphNode* node = new UndirectedGraphNode(0);
+        node->neighbors.push_back(node);
+        node->neighbors.push_back(node);
+        Solution sln;
+        auto newNode = sln.cloneGraph(node);
+        ASSERT_EQ(2, newNode->neighbors.size());
+    }
 }
