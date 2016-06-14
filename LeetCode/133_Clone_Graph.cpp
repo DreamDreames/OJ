@@ -1,4 +1,4 @@
-#include "shared.h"
+#include "stdafx.h"
 /*
  Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
  
@@ -33,7 +33,29 @@ namespace CloneGraph {
     class Solution {
     public:
         UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
-            
+			unordered_map<int, unordered_set<int>> record;
+			return cloneNeighbor(node, record);
         }
+	private:
+		UndirectedGraphNode *cloneNeighbor(UndirectedGraphNode* node, unordered_map<int, unordered_set<int>>& record){
+			if (node == NULL)
+				return NULL;
+
+			auto newNode = new UndirectedGraphNode(node->label);
+			for (auto neighbor : node->neighbors){
+				if (neighbor != NULL){
+					int minLabel = node->label, maxLabel = neighbor->label;
+					if (minLabel > maxLabel)
+						swap(minLabel, maxLabel);
+					if (record[minLabel].find(maxLabel) != record[minLabel].end())
+						record[minLabel].insert(maxLabel);
+					else
+						continue;
+				}
+				UndirectedGraphNode* newNeighbor = cloneNeighbor(neighbor, record);
+				newNode->neighbors.push_back(newNeighbor);
+			}
+			return newNode;
+		}
     };
 }

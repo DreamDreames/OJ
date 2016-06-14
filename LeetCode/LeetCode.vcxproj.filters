@@ -152,7 +152,7 @@
     <ClCompile Include="93_Restore_IP_Addresses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="127_Word_Ladder.cpp">
+    <ClCompile Include="133_Clone_Graph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
