@@ -17,6 +17,7 @@
 		8D0AA1341D0F0F3F00417C80 /* 133_Clone_Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AA1331D0F0F3F00417C80 /* 133_Clone_Graph.cpp */; };
 		8D0E92221D10586B0085680B /* 134_Gas_Station.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */; };
 		8D0E92241D105F610085680B /* 136_Single_Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92231D105F610085680B /* 136_Single_Number.cpp */; };
+		8D0E92261D1060990085680B /* 137_Single_Number_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92251D1060990085680B /* 137_Single_Number_2.cpp */; };
 		8D111A241CE7724B0038C9B4 /* 72_Edit_Distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */; };
 		8D111A261CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */; };
 		8D111A281CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A271CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp */; };
@@ -130,6 +131,7 @@
 		8D0AA1331D0F0F3F00417C80 /* 133_Clone_Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 133_Clone_Graph.cpp; path = LeetCode/133_Clone_Graph.cpp; sourceTree = "<group>"; };
 		8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 134_Gas_Station.cpp; path = LeetCode/134_Gas_Station.cpp; sourceTree = "<group>"; };
 		8D0E92231D105F610085680B /* 136_Single_Number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 136_Single_Number.cpp; path = LeetCode/136_Single_Number.cpp; sourceTree = "<group>"; };
+		8D0E92251D1060990085680B /* 137_Single_Number_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 137_Single_Number_2.cpp; path = LeetCode/137_Single_Number_2.cpp; sourceTree = "<group>"; };
 		8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 72_Edit_Distance.cpp; path = LeetCode/72_Edit_Distance.cpp; sourceTree = "<group>"; };
 		8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 73_Set_Matrix_Zeroes.cpp; path = LeetCode/73_Set_Matrix_Zeroes.cpp; sourceTree = "<group>"; };
 		8D111A271CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 74_Search_a_2D_Matrix.cpp; path = LeetCode/74_Search_a_2D_Matrix.cpp; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				8D0AA1331D0F0F3F00417C80 /* 133_Clone_Graph.cpp */,
 				8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */,
 				8D0E92231D105F610085680B /* 136_Single_Number.cpp */,
+				8D0E92251D1060990085680B /* 137_Single_Number_2.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				8DB045BD1D047CCC008A92C8 /* 120_Triangle.cpp in Sources */,
 				8D3C79411CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp in Sources */,
 				8D83A2E71D008903002DC93F /* 118_Pascal_Triangle.cpp in Sources */,
+				8D0E92261D1060990085680B /* 137_Single_Number_2.cpp in Sources */,
 				8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */,
 				8DC025C71D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp in Sources */,
 				8D111A331CEA32640038C9B4 /* 78_Subsets.cpp in Sources */,
