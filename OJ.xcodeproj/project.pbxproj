@@ -18,6 +18,7 @@
 		8D0E92221D10586B0085680B /* 134_Gas_Station.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */; };
 		8D0E92241D105F610085680B /* 136_Single_Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92231D105F610085680B /* 136_Single_Number.cpp */; };
 		8D0E92261D1060990085680B /* 137_Single_Number_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92251D1060990085680B /* 137_Single_Number_2.cpp */; };
+		8D0E92281D1064250085680B /* 139_Word_Break.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E92271D1064250085680B /* 139_Word_Break.cpp */; };
 		8D111A241CE7724B0038C9B4 /* 72_Edit_Distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */; };
 		8D111A261CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */; };
 		8D111A281CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D111A271CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp */; };
@@ -132,6 +133,7 @@
 		8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 134_Gas_Station.cpp; path = LeetCode/134_Gas_Station.cpp; sourceTree = "<group>"; };
 		8D0E92231D105F610085680B /* 136_Single_Number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 136_Single_Number.cpp; path = LeetCode/136_Single_Number.cpp; sourceTree = "<group>"; };
 		8D0E92251D1060990085680B /* 137_Single_Number_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 137_Single_Number_2.cpp; path = LeetCode/137_Single_Number_2.cpp; sourceTree = "<group>"; };
+		8D0E92271D1064250085680B /* 139_Word_Break.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 139_Word_Break.cpp; path = LeetCode/139_Word_Break.cpp; sourceTree = "<group>"; };
 		8D111A231CE7724B0038C9B4 /* 72_Edit_Distance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 72_Edit_Distance.cpp; path = LeetCode/72_Edit_Distance.cpp; sourceTree = "<group>"; };
 		8D111A251CE7735D0038C9B4 /* 73_Set_Matrix_Zeroes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 73_Set_Matrix_Zeroes.cpp; path = LeetCode/73_Set_Matrix_Zeroes.cpp; sourceTree = "<group>"; };
 		8D111A271CE78D3E0038C9B4 /* 74_Search_a_2D_Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 74_Search_a_2D_Matrix.cpp; path = LeetCode/74_Search_a_2D_Matrix.cpp; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 				8D0E92211D10586B0085680B /* 134_Gas_Station.cpp */,
 				8D0E92231D105F610085680B /* 136_Single_Number.cpp */,
 				8D0E92251D1060990085680B /* 137_Single_Number_2.cpp */,
+				8D0E92271D1064250085680B /* 139_Word_Break.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				8D211F901CF9896500E701D2 /* 97_Interleaving_String.cpp in Sources */,
 				8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */,
 				8DC5FF2C1CECC242004369DF /* heap.cpp in Sources */,
+				8D0E92281D1064250085680B /* 139_Word_Break.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
