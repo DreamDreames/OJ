@@ -98,6 +98,7 @@
 		8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */; };
 		8DB045BD1D047CCC008A92C8 /* 120_Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BC1D047CCC008A92C8 /* 120_Triangle.cpp */; };
 		8DB4CB011D16F4CC00409240 /* 165_Compare_Version_Numbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4CB001D16F4CC00409240 /* 165_Compare_Version_Numbers.cpp */; };
+		8DB4CB031D16FB2200409240 /* 166_Fraction_to_Recurring_Decimal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4CB021D16FB2200409240 /* 166_Fraction_to_Recurring_Decimal.cpp */; };
 		8DBA2E8C1D0C596500075FFB /* 125_Valid_Palindrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA2E8B1D0C596500075FFB /* 125_Valid_Palindrome.cpp */; };
 		8DC025C71D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC025C61D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp */; };
 		8DC025C91D05CD060027626F /* 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC025C81D05CD060027626F /* 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp */; };
@@ -227,6 +228,7 @@
 		8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; path = LeetCode/117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; sourceTree = "<group>"; };
 		8DB045BC1D047CCC008A92C8 /* 120_Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 120_Triangle.cpp; path = LeetCode/120_Triangle.cpp; sourceTree = "<group>"; };
 		8DB4CB001D16F4CC00409240 /* 165_Compare_Version_Numbers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 165_Compare_Version_Numbers.cpp; path = LeetCode/165_Compare_Version_Numbers.cpp; sourceTree = "<group>"; };
+		8DB4CB021D16FB2200409240 /* 166_Fraction_to_Recurring_Decimal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 166_Fraction_to_Recurring_Decimal.cpp; path = LeetCode/166_Fraction_to_Recurring_Decimal.cpp; sourceTree = "<group>"; };
 		8DBA2E8B1D0C596500075FFB /* 125_Valid_Palindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 125_Valid_Palindrome.cpp; path = LeetCode/125_Valid_Palindrome.cpp; sourceTree = "<group>"; };
 		8DC025C61D05C88C0027626F /* 121_Best_Time_To_Buy_And_Sell_Stock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 121_Best_Time_To_Buy_And_Sell_Stock.cpp; path = LeetCode/121_Best_Time_To_Buy_And_Sell_Stock.cpp; sourceTree = "<group>"; };
 		8DC025C81D05CD060027626F /* 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 122_Best_Time_To_Buy_And_Sell_Stock_2.cpp; path = LeetCode/122_Best_Time_To_Buy_And_Sell_Stock_2.cpp; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 				8D885F771D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp */,
 				8D885F791D16E17500E6CCF8 /* 162_Find_Peak_Element.cpp */,
 				8DB4CB001D16F4CC00409240 /* 165_Compare_Version_Numbers.cpp */,
+				8DB4CB021D16FB2200409240 /* 166_Fraction_to_Recurring_Decimal.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				8D1E0F9E1CE36E8800ED73AB /* 59_Spiral_Matrix_2.cpp in Sources */,
 				8D1CFF971CDB9D03007D100B /* 47_Permutations_2.cpp in Sources */,
 				8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */,
+				8DB4CB031D16FB2200409240 /* 166_Fraction_to_Recurring_Decimal.cpp in Sources */,
 				8D33704C1D1158C7007F791F /* 141_Linked_List_Cycle.cpp in Sources */,
 				8DB045BD1D047CCC008A92C8 /* 120_Triangle.cpp in Sources */,
 				8D3C79411CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp in Sources */,
