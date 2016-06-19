@@ -13,63 +13,36 @@ namespace ReverseWordsInAString{
     class Solution {
     public:
         void reverseWords(string &s) {
-            trim(s);
-            reverseBetween(s, 0, (int)s.length() - 1);
-        }
-    private:
-        void trim(string& s){
-            bool isSpace = false;
-            //for(int i = 0; i < s.length(); ++ i){
-            for(auto iter = s.begin(); iter != s.end(); ){
-                if(*iter == ' ' || *iter == '\t'){
-                    if(isSpace){
-                        auto temp = iter++;
-                        s.erase(temp);
+            if(s == "")
+                return;
+            string ans = "";
+            int start = -1, end = -1;
+            for(int i = (int)s.length() - 1; i >= 0; -- i){
+                if(s[i] == ' '){
+                    if(end != -1){
+                        start = i + 1;
+                        if(ans == "")
+                            ans = s.substr(start, end - start + 1);
+                        else
+                            ans += " " + s.substr(start, end - start + 1);
                     }
-                    else{
-                        isSpace = true;
-                        iter ++;
-                    }
+                    start = end = -1;
+                    continue;
                 }
-                else{
-                    isSpace = false;
-                    iter ++;
+                if(end == -1){
+                    end = i;
                 }
             }
-            if(s.length() > 0){
-                if(s[0] == ' ' || s[0] == '\t')
-                    s.erase(s.begin());
+            if(s[0] != ' '){
+                if(end != -1){
+                    start = 0;
+                }
+                if(ans == "")
+                    ans = s.substr(start, end - start + 1);
+                else
+                    ans += " " + s.substr(start, end - start + 1);
             }
-            if(s.length() > 0){
-                int index = (int)s.length() - 1;
-                if(s[index] == ' ' || s[index] == '\t')
-                    s.erase(s.end() - 1);
-            }
-        }
-        void reverseBetween(string& s, int start, int end){
-            if(start >= end)
-                return;
-            vector<int> spaces;
-            for(int i = start; i <= end; ++ i){
-                if(s[i] == ' ')
-                    spaces.push_back(i);
-            }
-            if(spaces.size() == 0)
-                return;
-            
-            int i = spaces[spaces.size() / 2];
-            reverseBetween(s, start, i - 1);
-            reverseBetween(s, i + 1, end);
-            string left = s.substr(i + 1, end - i);
-            string right = s.substr(start, i - start);
-            int j = start, index = 0;
-            while(index < left.length()){
-                s[j ++] = left[index++];
-            }
-            s[j ++] = ' '; index = 0;
-            while(index < right.length()){
-                s[j ++] = right[index ++];
-            }
+            s = ans;
         }
     };
     class helper{
