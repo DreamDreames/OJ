@@ -90,6 +90,7 @@
 		8D885F701D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F6F1D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp */; };
 		8D885F721D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */; };
 		8D885F741D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */; };
+		8D885F761D16CF2D00E6CCF8 /* 155_Min_Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */; };
 		8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */; };
 		8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */; };
 		8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */; };
@@ -215,6 +216,7 @@
 		8D885F6F1D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 151_Reverse_Words_in_a_String.cpp; path = LeetCode/151_Reverse_Words_in_a_String.cpp; sourceTree = "<group>"; };
 		8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 152_Maximum_Product_Subarray.cpp; path = LeetCode/152_Maximum_Product_Subarray.cpp; sourceTree = "<group>"; };
 		8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 153_Find_Minimum_In_Rotated_Sorted_Array.cpp; path = LeetCode/153_Find_Minimum_In_Rotated_Sorted_Array.cpp; sourceTree = "<group>"; };
+		8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 155_Min_Stack.cpp; path = LeetCode/155_Min_Stack.cpp; sourceTree = "<group>"; };
 		8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 90_Subset2.cpp; path = LeetCode/90_Subset2.cpp; sourceTree = "<group>"; };
 		8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 116_Populating_Next_Right_Pointers_in_Each_Node.cpp; path = LeetCode/116_Populating_Next_Right_Pointers_in_Each_Node.cpp; sourceTree = "<group>"; };
 		8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; path = LeetCode/117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				8D885F6F1D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp */,
 				8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */,
 				8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */,
+				8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				8D211F9A1CF9F24D00E701D2 /* 103_Binary_Tree_Zigzag_Level_Order_Traversal.cpp in Sources */,
 				8D0AA1321D0F07B500417C80 /* 131_Palindrome_Partitioning.cpp in Sources */,
 				8D1E0FA01CE378FA00ED73AB /* 60_Permutation_Sequence.cpp in Sources */,
+				8D885F761D16CF2D00E6CCF8 /* 155_Min_Stack.cpp in Sources */,
 				8D5694771CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp in Sources */,
 				8D0AA1341D0F0F3F00417C80 /* 133_Clone_Graph.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
