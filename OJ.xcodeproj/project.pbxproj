@@ -89,6 +89,7 @@
 		8D885F6E1D15940400E6CCF8 /* 150_Evaluate_Reverse_Polish_Notation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F6D1D15940400E6CCF8 /* 150_Evaluate_Reverse_Polish_Notation.cpp */; };
 		8D885F701D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F6F1D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp */; };
 		8D885F721D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */; };
+		8D885F741D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */; };
 		8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */; };
 		8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */; };
 		8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */; };
@@ -213,6 +214,7 @@
 		8D885F6D1D15940400E6CCF8 /* 150_Evaluate_Reverse_Polish_Notation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 150_Evaluate_Reverse_Polish_Notation.cpp; path = LeetCode/150_Evaluate_Reverse_Polish_Notation.cpp; sourceTree = "<group>"; };
 		8D885F6F1D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 151_Reverse_Words_in_a_String.cpp; path = LeetCode/151_Reverse_Words_in_a_String.cpp; sourceTree = "<group>"; };
 		8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 152_Maximum_Product_Subarray.cpp; path = LeetCode/152_Maximum_Product_Subarray.cpp; sourceTree = "<group>"; };
+		8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 153_Find_Minimum_In_Rotated_Sorted_Array.cpp; path = LeetCode/153_Find_Minimum_In_Rotated_Sorted_Array.cpp; sourceTree = "<group>"; };
 		8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 90_Subset2.cpp; path = LeetCode/90_Subset2.cpp; sourceTree = "<group>"; };
 		8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 116_Populating_Next_Right_Pointers_in_Each_Node.cpp; path = LeetCode/116_Populating_Next_Right_Pointers_in_Each_Node.cpp; sourceTree = "<group>"; };
 		8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; path = LeetCode/117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 				8D885F6D1D15940400E6CCF8 /* 150_Evaluate_Reverse_Polish_Notation.cpp */,
 				8D885F6F1D15974A00E6CCF8 /* 151_Reverse_Words_in_a_String.cpp */,
 				8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */,
+				8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				8DC5FF281CECAE31004369DF /* 82_Remove_Duplicates_From_Sorted_List2.cpp in Sources */,
 				8D885F6C1D158E8200E6CCF8 /* 148_Sort_List.cpp in Sources */,
 				8D1CFF7B1CCFC29C007D100B /* 34_Search_for_a_Range.cpp in Sources */,
+				8D885F741D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp in Sources */,
 				8D1CFF8B1CD64B59007D100B /* 42_Trapping_Rain_Water.cpp in Sources */,
 				8D60A6FF1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp in Sources */,
 				8DC5FF2E1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp in Sources */,
