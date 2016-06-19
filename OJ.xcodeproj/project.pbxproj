@@ -92,6 +92,7 @@
 		8D885F741D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */; };
 		8D885F761D16CF2D00E6CCF8 /* 155_Min_Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */; };
 		8D885F781D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F771D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp */; };
+		8D885F7A1D16E17500E6CCF8 /* 162_Find_Peak_Element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F791D16E17500E6CCF8 /* 162_Find_Peak_Element.cpp */; };
 		8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */; };
 		8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */; };
 		8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */; };
@@ -219,6 +220,7 @@
 		8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 153_Find_Minimum_In_Rotated_Sorted_Array.cpp; path = LeetCode/153_Find_Minimum_In_Rotated_Sorted_Array.cpp; sourceTree = "<group>"; };
 		8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 155_Min_Stack.cpp; path = LeetCode/155_Min_Stack.cpp; sourceTree = "<group>"; };
 		8D885F771D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 160_Intersection_Of_Two_Linked_List.cpp; path = LeetCode/160_Intersection_Of_Two_Linked_List.cpp; sourceTree = "<group>"; };
+		8D885F791D16E17500E6CCF8 /* 162_Find_Peak_Element.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 162_Find_Peak_Element.cpp; path = LeetCode/162_Find_Peak_Element.cpp; sourceTree = "<group>"; };
 		8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 90_Subset2.cpp; path = LeetCode/90_Subset2.cpp; sourceTree = "<group>"; };
 		8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 116_Populating_Next_Right_Pointers_in_Each_Node.cpp; path = LeetCode/116_Populating_Next_Right_Pointers_in_Each_Node.cpp; sourceTree = "<group>"; };
 		8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; path = LeetCode/117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */,
 				8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */,
 				8D885F771D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp */,
+				8D885F791D16E17500E6CCF8 /* 162_Find_Peak_Element.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				8DF5C8181CFDCE8100A1B5A6 /* 109_Convert_Sorted_List_To_Binary_Search_Tree.cpp in Sources */,
 				8D885F6A1D15817200E6CCF8 /* 147_Insertion_Sort_List.cpp in Sources */,
 				8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */,
+				8D885F7A1D16E17500E6CCF8 /* 162_Find_Peak_Element.cpp in Sources */,
 				8D211F9E1CF9F5FD00E701D2 /* 99_Recover_Binary_Search_Tree.cpp in Sources */,
 				8D111A371CEB75F60038C9B4 /* 80_Remove_Duplicates_From_Sorted_Array2.cpp in Sources */,
 				8D111A391CEB7B3F0038C9B4 /* 81_Search_in_Rotated_Sorted_Array2.cpp in Sources */,
