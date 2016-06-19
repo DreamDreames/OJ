@@ -18,7 +18,20 @@
 namespace FindPeakElement{
     class Solution {
     public:
-        int findPeakElement(vector<int>& nums) {
+        int findPeakElement(const vector<int> &num) {
+            int left = 0, right = (int)num.size() - 1;
+            while(left <= right){
+                if(left == right)
+                    return left;
+                int mid = (left + right) / 2;
+                if(num[mid] < num[mid + 1])
+                    left = mid + 1;
+                else
+                    right = mid;
+            }
+            return -1;
+        }
+        int findPeakElement1(vector<int>& nums) {
             int size = (int)nums.size();
             int low = 0, high = size - 1;
             while(low <= high){
