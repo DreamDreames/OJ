@@ -91,6 +91,7 @@
 		8D885F721D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */; };
 		8D885F741D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */; };
 		8D885F761D16CF2D00E6CCF8 /* 155_Min_Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */; };
+		8D885F781D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D885F771D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp */; };
 		8DA4ADF41CF34AF800DBA985 /* 90_Subset2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */; };
 		8DB045B91D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */; };
 		8DB045BB1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */; };
@@ -217,6 +218,7 @@
 		8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 152_Maximum_Product_Subarray.cpp; path = LeetCode/152_Maximum_Product_Subarray.cpp; sourceTree = "<group>"; };
 		8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 153_Find_Minimum_In_Rotated_Sorted_Array.cpp; path = LeetCode/153_Find_Minimum_In_Rotated_Sorted_Array.cpp; sourceTree = "<group>"; };
 		8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 155_Min_Stack.cpp; path = LeetCode/155_Min_Stack.cpp; sourceTree = "<group>"; };
+		8D885F771D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 160_Intersection_Of_Two_Linked_List.cpp; path = LeetCode/160_Intersection_Of_Two_Linked_List.cpp; sourceTree = "<group>"; };
 		8DA4ADF31CF34AF800DBA985 /* 90_Subset2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 90_Subset2.cpp; path = LeetCode/90_Subset2.cpp; sourceTree = "<group>"; };
 		8DB045B81D046441008A92C8 /* 116_Populating_Next_Right_Pointers_in_Each_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 116_Populating_Next_Right_Pointers_in_Each_Node.cpp; path = LeetCode/116_Populating_Next_Right_Pointers_in_Each_Node.cpp; sourceTree = "<group>"; };
 		8DB045BA1D0471F2008A92C8 /* 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; path = LeetCode/117_Populating_Next_Right_Pointers_In_Each_Node_2.cpp; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				8D885F711D16253200E6CCF8 /* 152_Maximum_Product_Subarray.cpp */,
 				8D885F731D16CAC400E6CCF8 /* 153_Find_Minimum_In_Rotated_Sorted_Array.cpp */,
 				8D885F751D16CF2D00E6CCF8 /* 155_Min_Stack.cpp */,
+				8D885F771D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				8D211F941CF9E04100E701D2 /* 100_Same_Tree.cpp in Sources */,
 				8D83A2E51CFEFDD3002DC93F /* 115_Distinct_Subsequences.cpp in Sources */,
 				8D1E0FA41CE38A6900ED73AB /* 62_Unique_Paths.cpp in Sources */,
+				8D885F781D16DE4C00E6CCF8 /* 160_Intersection_Of_Two_Linked_List.cpp in Sources */,
 				8D211F901CF9896500E701D2 /* 97_Interleaving_String.cpp in Sources */,
 				8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */,
 				8DC5FF2C1CECC242004369DF /* heap.cpp in Sources */,
