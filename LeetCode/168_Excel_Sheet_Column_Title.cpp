@@ -5,16 +5,29 @@ namespace ExcelSheetColumnTitle {
     public:
         string convertToTitle(int n) {
             string ans = "";
-            while(n){
-                if (n / 27 > 0){
-                    ans += (n / 27 + 'A' - 1);
-                    n /= 27;
-                }
-                else{
-                    ans += (n % 27) + 'A' - 1;
-                }
+            while(n != 0){
+                n --;
+                ans.push_back(n % 26 + 'A');
+                n /= 26;
             }
+            reverse(ans.begin(), ans.end());
             return ans;
         }
     };
+    class helper{
+    public:
+        void test(int n, string expected){
+            Solution sln;
+            string actual = sln.convertToTitle(n);
+            ASSERT_EQ(expected, actual);
+        }
+    };
+    TEST(ExcelSheetColumnTitle, convertToTitle){
+        helper h;
+        h.test(1, "A");
+        h.test(26, "Z");
+        h.test(27, "AA");
+        h.test(28, "AB");
+        h.test(29, "AC");
+    }
 }
