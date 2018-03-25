@@ -112,6 +112,7 @@
 		8DC5FF2C1CECC242004369DF /* heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF2B1CECC242004369DF /* heap.cpp */; };
 		8DC5FF2E1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */; };
 		8DCE05541D0D8F52005F9965 /* 127_Word_Ladder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCE05531D0D8F52005F9965 /* 127_Word_Ladder.cpp */; };
+		8DCEC8062067CB4900E747FA /* 167_Two_Sum_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEC8052067CB4900E747FA /* 167_Two_Sum_2.cpp */; };
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
 		8DD2A7FB1D22BF9C002DD03D /* 124_Binary_Tree_Maximum_Path_Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A7FA1D22BF9C002DD03D /* 124_Binary_Tree_Maximum_Path_Sum.cpp */; };
 		8DEB7F9A1CFC8B130038EAD7 /* 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB7F991CFC8B130038EAD7 /* 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp */; };
@@ -247,6 +248,7 @@
 		8DC5FF2B1CECC242004369DF /* heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = heap.cpp; path = Algorithms/heap.cpp; sourceTree = "<group>"; };
 		8DC5FF2D1CEE0825004369DF /* 84_Largest_Rectangle_in_Histogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 84_Largest_Rectangle_in_Histogram.cpp; path = LeetCode/84_Largest_Rectangle_in_Histogram.cpp; sourceTree = "<group>"; };
 		8DCE05531D0D8F52005F9965 /* 127_Word_Ladder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 127_Word_Ladder.cpp; path = LeetCode/127_Word_Ladder.cpp; sourceTree = "<group>"; };
+		8DCEC8052067CB4900E747FA /* 167_Two_Sum_2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 167_Two_Sum_2.cpp; path = LeetCode/167_Two_Sum_2.cpp; sourceTree = "<group>"; };
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
 		8DD2A7FA1D22BF9C002DD03D /* 124_Binary_Tree_Maximum_Path_Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 124_Binary_Tree_Maximum_Path_Sum.cpp; path = LeetCode/124_Binary_Tree_Maximum_Path_Sum.cpp; sourceTree = "<group>"; };
 		8DEB7F991CFC8B130038EAD7 /* 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp; path = LeetCode/106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				8D21AA931D1843D10097A818 /* 169_Majority_Element.cpp */,
 				8D21AA8F1D18240D0097A818 /* 208_Implement_Trie.cpp */,
 				8D21AA911D1830010097A818 /* 211_Add_And_Search_Word_Data_Structure_Design.cpp */,
+				8DCEC8052067CB4900E747FA /* 167_Two_Sum_2.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -502,7 +505,7 @@
 		8D0715701C8F1BC20011B820 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Yangde-Software";
 				TargetAttributes = {
 					8D0715771C8F1BC30011B820 = {
@@ -578,6 +581,7 @@
 				8D1CFF851CD45A85007D100B /* 39_Combination_Sum.cpp in Sources */,
 				8D83A2E11CFEF820002DC93F /* 113_Path_Sum_2.cpp in Sources */,
 				8D83A2E31CFEFB50002DC93F /* 114_Flatten_Binary_Tree_To_Linked_List.cpp in Sources */,
+				8DCEC8062067CB4900E747FA /* 167_Two_Sum_2.cpp in Sources */,
 				8D1E0FAE1CE4E36800ED73AB /* 68_Text_Justification.cpp in Sources */,
 				8D1CFF871CD46E1F007D100B /* 40_Combination_Sum_2.cpp in Sources */,
 				8D1E0FA81CE4D0DE00ED73AB /* 64_Minimum_Path_Sum.cpp in Sources */,
@@ -677,8 +681,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -720,8 +726,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -784,7 +792,6 @@
 		8D0715911C8F2A5D0011B820 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/googletest",
@@ -797,7 +804,6 @@
 		8D0715921C8F2A5D0011B820 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/googletest",
