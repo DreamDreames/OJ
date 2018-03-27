@@ -78,6 +78,7 @@
 		8D366EB31CF5FC00006137BF /* 94_Binary_Tree_Inorder_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D366EB21CF5FC00006137BF /* 94_Binary_Tree_Inorder_Traversal.cpp */; };
 		8D3C793F1CF492610003AA1A /* 91_Decode_Ways.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C793E1CF492610003AA1A /* 91_Decode_Ways.cpp */; };
 		8D3C79411CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C79401CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp */; };
+		8D537ED12067D5B800EBAEC9 /* 692_Top_K_Frequent_Words.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D537ED02067D5B800EBAEC9 /* 692_Top_K_Frequent_Words.cpp */; };
 		8D5694771CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D5694761CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp */; };
 		8D60A6FB1CE6437600B8DE7E /* 67_Add_Binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */; };
 		8D60A6FD1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FC1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp */; };
@@ -214,6 +215,7 @@
 		8D366EB21CF5FC00006137BF /* 94_Binary_Tree_Inorder_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 94_Binary_Tree_Inorder_Traversal.cpp; path = LeetCode/94_Binary_Tree_Inorder_Traversal.cpp; sourceTree = "<group>"; };
 		8D3C793E1CF492610003AA1A /* 91_Decode_Ways.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 91_Decode_Ways.cpp; path = LeetCode/91_Decode_Ways.cpp; sourceTree = "<group>"; };
 		8D3C79401CF4A9CF0003AA1A /* 92_Reverse_Linked_List2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 92_Reverse_Linked_List2.cpp; path = LeetCode/92_Reverse_Linked_List2.cpp; sourceTree = "<group>"; };
+		8D537ED02067D5B800EBAEC9 /* 692_Top_K_Frequent_Words.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 692_Top_K_Frequent_Words.cpp; path = LeetCode/692_Top_K_Frequent_Words.cpp; sourceTree = "<group>"; };
 		8D5694761CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp; path = LeetCode/105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp; sourceTree = "<group>"; };
 		8D60A6FA1CE6437600B8DE7E /* 67_Add_Binary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 67_Add_Binary.cpp; path = LeetCode/67_Add_Binary.cpp; sourceTree = "<group>"; };
 		8D60A6FC1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 70_Climbing_Stairs.cpp; path = LeetCode/70_Climbing_Stairs.cpp; sourceTree = "<group>"; };
@@ -424,6 +426,7 @@
 				8D21AA8F1D18240D0097A818 /* 208_Implement_Trie.cpp */,
 				8D21AA911D1830010097A818 /* 211_Add_And_Search_Word_Data_Structure_Design.cpp */,
 				8DCEC8052067CB4900E747FA /* 167_Two_Sum_2.cpp */,
+				8D537ED02067D5B800EBAEC9 /* 692_Top_K_Frequent_Words.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -652,6 +655,7 @@
 				8D211F901CF9896500E701D2 /* 97_Interleaving_String.cpp in Sources */,
 				8D30BCA31CE0BDE000F79D18 /* 52_N_Queens_2.cpp in Sources */,
 				8DC5FF2C1CECC242004369DF /* heap.cpp in Sources */,
+				8D537ED12067D5B800EBAEC9 /* 692_Top_K_Frequent_Words.cpp in Sources */,
 				8DD2A7FB1D22BF9C002DD03D /* 124_Binary_Tree_Maximum_Path_Sum.cpp in Sources */,
 				8D0E92281D1064250085680B /* 139_Word_Break.cpp in Sources */,
 			);
