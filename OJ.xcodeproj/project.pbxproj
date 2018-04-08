@@ -118,6 +118,7 @@
 		8DCEDD1C1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */; };
 		8DD2A7FB1D22BF9C002DD03D /* 124_Binary_Tree_Maximum_Path_Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2A7FA1D22BF9C002DD03D /* 124_Binary_Tree_Maximum_Path_Sum.cpp */; };
 		8DE6D2DD207271910024EBE6 /* 643_Maximum_Average_Subarray_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6D2DC207271910024EBE6 /* 643_Maximum_Average_Subarray_1.cpp */; };
+		8DE6D2DF20727A930024EBE6 /* 752_Open_the_Lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6D2DE20727A930024EBE6 /* 752_Open_the_Lock.cpp */; };
 		8DEB7F9A1CFC8B130038EAD7 /* 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB7F991CFC8B130038EAD7 /* 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp */; };
 		8DEB7F9C1CFC8E7B0038EAD7 /* 107_Binary_Tree_Level_Order_Traversal2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB7F9B1CFC8E7B0038EAD7 /* 107_Binary_Tree_Level_Order_Traversal2.cpp */; };
 		8DF5C8161CFDCD1D00A1B5A6 /* 108_Convert_Sorted_Array_To_Binary_Search_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5C8151CFDCD1D00A1B5A6 /* 108_Convert_Sorted_Array_To_Binary_Search_Tree.cpp */; };
@@ -257,6 +258,7 @@
 		8DCEDD1B1CDE2A55003CB079 /* 58_Length_Of_Last_Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 58_Length_Of_Last_Word.cpp; path = LeetCode/58_Length_Of_Last_Word.cpp; sourceTree = "<group>"; };
 		8DD2A7FA1D22BF9C002DD03D /* 124_Binary_Tree_Maximum_Path_Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 124_Binary_Tree_Maximum_Path_Sum.cpp; path = LeetCode/124_Binary_Tree_Maximum_Path_Sum.cpp; sourceTree = "<group>"; };
 		8DE6D2DC207271910024EBE6 /* 643_Maximum_Average_Subarray_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 643_Maximum_Average_Subarray_1.cpp; path = LeetCode/643_Maximum_Average_Subarray_1.cpp; sourceTree = "<group>"; };
+		8DE6D2DE20727A930024EBE6 /* 752_Open_the_Lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 752_Open_the_Lock.cpp; path = LeetCode/752_Open_the_Lock.cpp; sourceTree = "<group>"; };
 		8DEB7F991CFC8B130038EAD7 /* 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp; path = LeetCode/106_Construct_Binary_Tree_From_Inorder_And_Postorder_Traversal.cpp; sourceTree = "<group>"; };
 		8DEB7F9B1CFC8E7B0038EAD7 /* 107_Binary_Tree_Level_Order_Traversal2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 107_Binary_Tree_Level_Order_Traversal2.cpp; path = LeetCode/107_Binary_Tree_Level_Order_Traversal2.cpp; sourceTree = "<group>"; };
 		8DF5C8151CFDCD1D00A1B5A6 /* 108_Convert_Sorted_Array_To_Binary_Search_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 108_Convert_Sorted_Array_To_Binary_Search_Tree.cpp; path = LeetCode/108_Convert_Sorted_Array_To_Binary_Search_Tree.cpp; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 				8D537ED02067D5B800EBAEC9 /* 692_Top_K_Frequent_Words.cpp */,
 				8D537ED2206BDFD100EBAEC9 /* 374_GuessNumberHigherOrLower.cpp */,
 				8DE6D2DC207271910024EBE6 /* 643_Maximum_Average_Subarray_1.cpp */,
+				8DE6D2DE20727A930024EBE6 /* 752_Open_the_Lock.cpp */,
 			);
 			name = LeetCode;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				8D5694771CFB1BE0008D8277 /* 105_Construct_Binary_Tree_From_PreOrder_And_Inorder_Traversal.cpp in Sources */,
 				8D0AA1341D0F0F3F00417C80 /* 133_Clone_Graph.cpp in Sources */,
 				8D1CFF791CCFAFBD007D100B /* 10_Regular_Expression_Matching.cpp in Sources */,
+				8DE6D2DF20727A930024EBE6 /* 752_Open_the_Lock.cpp in Sources */,
 				8D211F941CF9E04100E701D2 /* 100_Same_Tree.cpp in Sources */,
 				8D83A2E51CFEFDD3002DC93F /* 115_Distinct_Subsequences.cpp in Sources */,
 				8D1E0FA41CE38A6900ED73AB /* 62_Unique_Paths.cpp in Sources */,
