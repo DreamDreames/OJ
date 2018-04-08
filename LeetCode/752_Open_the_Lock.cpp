@@ -37,6 +37,67 @@
 
 
 namespace OpenTheLock {
+    
+    /*
+     
+    // With BFS, we can return once we find an answer.
+    // But with DFS, we don't know whether we already find the min value until we traverse the entire search space.
+    class SolutionDFS {
+    public:
+        int openLock(vector<string>& deadends, string target) {
+            string start = "0000";
+            if(start == target)
+                return 0;
+            
+            unordered_map<string, int> visited;
+            unordered_set<string> blocks;
+            for(auto &deadend : deadends) {
+                visited[deadend] = -1;
+            }
+            
+            return findMin(blocks, start, target, visited);
+        }
+    private:
+        int findMin(unordered_set<string>& blocks, string current, string& target, unordered_map<string, int>& visited) {
+            if(current == target) {
+                return 0;
+            }
+            
+            if(visited.find(current) != visited.end())
+                return visited[current];
+            
+            if(blocks.find(current) == blocks.end())
+                blocks.insert(current);
+            
+            for(int i = 0; i < 4; ++ i) {
+                for(int j = 1; j >= -1; -- j) {
+                    string temp = current;
+                    temp[i] += j;
+                    if(temp[i] < '0')
+                        temp[i] = '9';
+                    else if(temp[i] > '9')
+                        temp[i] = '0';
+                    if(temp == current || blocks.find(temp) != blocks.end())
+                        continue;
+                    int distance = findMin(blocks, temp, target, visited);
+                    if(distance != -1) {
+                        if(visited.find(current) != visited.end())
+                            visited[current] = distance + 1;
+                        
+                        else if (distance < visited[current])
+                            visited[current] = distance + 1;
+                    }
+                }
+            }
+            if(visited.find(current) == visited.end())
+                visited[current] = -1;
+            
+            blocks.erase(current);
+            return visited[current];
+        }
+    };
+    */
+    
     class Solution {
     public:
         int openLock(vector<string>& deadends, string target) {
