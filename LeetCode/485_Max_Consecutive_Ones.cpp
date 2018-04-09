@@ -20,10 +20,8 @@ namespace MaxConsecutiveOnes {
         int findMaxConsecutiveOnes(vector<int>& nums) {
             int max = 0, current = 0;
             for(auto num : nums) {
-                if(num == 1) {
-                    if( ++current > max)
-                        max = current;
-                }
+                if(num == 1)
+                    max = std::max(++current, max);
                 else
                     current = 0;
             }
