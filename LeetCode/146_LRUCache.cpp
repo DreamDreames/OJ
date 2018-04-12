@@ -24,18 +24,98 @@ cache.get(4);       // returns 4
 */
 
 namespace LRUCache {
+    struct DoublyListNode {
+        DoublyListNode *prev, *next;
+        int key, val;
+        
+        DoublyListNode(int k, int v) : prev(NULL), next(NULL), key(k), val(v){}
+    };
+    
     class LRUCache {
+    private:
+        int capacity;
+        map<int, DoublyListNode*> cache;
+        DoublyListNode *head, *tail;
+        
     public:
         LRUCache(int capacity) {
-            
+            this->capacity = capacity;
+            head = NULL;
+            tail = NULL;
         }
         
         int get(int key) {
-            return -1;
+            if(cache.find(key) == cache.end())
+                return -1;
+            
+            DoublyListNode* current = cache[key];
+            update(current);
+            return current->val;
         }
         
         void put(int key, int value) {
+            if(capacity == 0)
+                return;
             
+            if(cache.find(key) != cache.end()){
+                DoublyListNode* current = cache[key];
+                current->val = value;
+                update(current);
+                return;
+            }
+            
+            if(cache.size() == capacity)
+                release();
+            
+            DoublyListNode* node = new DoublyListNode(key, value);
+            cache[key] = node;
+            insert(node);
+        }
+        
+    private:
+        void insert(DoublyListNode* node) {
+            if(head == NULL) {
+                head = node;
+                tail = node;
+                return;
+            }
+            
+            node->next = head;
+            head->prev = node;
+            head = node;
+        }
+        
+        void release() {
+            if(tail == NULL)
+                return;
+            
+            cache.erase(tail->key);
+            
+            if(head == tail) {
+                delete tail;
+                head = NULL;
+                tail = NULL;
+                return;
+            }
+            
+            DoublyListNode* newTail = tail->prev;
+            newTail->next = NULL;
+            delete tail;
+            tail = newTail;
+        }
+        
+        void update(DoublyListNode* current) {
+            if(head == current)
+                return;
+            
+            if(tail == current)
+                tail = current->prev;
+            
+            current->prev->next = current->next;
+            current->next = head;
+            current->prev = NULL;
+            head->prev = current;
+            head = current;
         }
     };
 }
