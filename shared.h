@@ -14,6 +14,7 @@
 #include <unordered_map>
 #include <stack>
 #include <queue>
+#include <list>
 #include "gtest/gtest.h"
 
 using namespace std;

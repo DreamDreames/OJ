@@ -24,6 +24,68 @@ cache.get(4);       // returns 4
 */
 
 namespace LRUCache {
+    class LRUCache2 {
+    public:
+        LRUCache2(int capacity) {
+            _capacity = capacity;
+        }
+        
+        int get(int key) {
+            if(_cache.find(key) == _cache.end())
+                return -1;
+            itor it = _cache[key];
+            _cache[key] = update(it);
+            return _cache[key]->second;
+        }
+        
+        void put(int key, int value) {
+            if(_capacity == 0)
+                return;
+            
+            if(_cache.find(key) != _cache.end()) {
+                itor it = _cache[key];
+                it->second = value;
+                _cache[key] = update(it);
+                return;
+            }
+            
+            if(_cache.size() == _capacity) {
+                release();
+            }
+            
+            _cache[key] = insert(key, value);
+        }
+        
+    private:
+        typedef pair<int, int> kvp;
+        typedef list<kvp>::iterator itor;
+        
+        itor update(itor it) {
+            _link.push_front(*it);
+            _link.erase(it);
+            return _link.begin();
+        }
+        
+        void release() {
+            kvp p =_link.back();
+            _cache.erase(p.first);
+            _link.pop_back();
+        }
+        
+        itor insert(int key, int value) {
+            kvp p = make_pair(key, value);
+            _link.push_front(p);
+            return _link.begin();
+        }
+        
+        
+    private:
+        int _capacity;
+        list<kvp> _link;
+        unordered_map<int, itor> _cache;
+    };
+    
+    
     struct DoublyListNode {
         DoublyListNode *prev, *next;
         int key, val;
