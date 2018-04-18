@@ -85,6 +85,7 @@
 		8D60A6FD1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FC1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp */; };
 		8D60A6FF1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D60A6FE1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp */; };
 		8D6348D820878F8F008739E4 /* 557_Reverse_Words_in_a_String_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D6348D720878F8F008739E4 /* 557_Reverse_Words_in_a_String_3.cpp */; };
+		8D6348DA20879043008739E4 /* 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D6348D920879043008739E4 /* 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp */; };
 		8D64A848207BAE9E0053479A /* 442_Find_All_Duplications_in_an_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D64A847207BAE9E0053479A /* 442_Find_All_Duplications_in_an_Array.cpp */; };
 		8D64A84A207BB9190053479A /* 485_Max_Consecutive_Ones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D64A849207BB9190053479A /* 485_Max_Consecutive_Ones.cpp */; };
 		8D64A84C207D0D4B0053479A /* 146_LRUCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D64A84B207D0D4B0053479A /* 146_LRUCache.cpp */; };
@@ -229,6 +230,7 @@
 		8D60A6FC1CE704B000B8DE7E /* 70_Climbing_Stairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 70_Climbing_Stairs.cpp; path = LeetCode/70_Climbing_Stairs.cpp; sourceTree = "<group>"; };
 		8D60A6FE1CE70ADA00B8DE7E /* 71_Simplify_Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 71_Simplify_Path.cpp; path = LeetCode/71_Simplify_Path.cpp; sourceTree = "<group>"; };
 		8D6348D720878F8F008739E4 /* 557_Reverse_Words_in_a_String_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 557_Reverse_Words_in_a_String_3.cpp; path = LeetCode/557_Reverse_Words_in_a_String_3.cpp; sourceTree = "<group>"; };
+		8D6348D920879043008739E4 /* 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp; path = LeetCode/235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp; sourceTree = "<group>"; };
 		8D64A847207BAE9E0053479A /* 442_Find_All_Duplications_in_an_Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 442_Find_All_Duplications_in_an_Array.cpp; path = LeetCode/442_Find_All_Duplications_in_an_Array.cpp; sourceTree = "<group>"; };
 		8D64A849207BB9190053479A /* 485_Max_Consecutive_Ones.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 485_Max_Consecutive_Ones.cpp; path = LeetCode/485_Max_Consecutive_Ones.cpp; sourceTree = "<group>"; };
 		8D64A84B207D0D4B0053479A /* 146_LRUCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 146_LRUCache.cpp; path = LeetCode/146_LRUCache.cpp; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 				8D21AA931D1843D10097A818 /* 169_Majority_Element.cpp */,
 				8D21AA8F1D18240D0097A818 /* 208_Implement_Trie.cpp */,
 				8D21AA911D1830010097A818 /* 211_Add_And_Search_Word_Data_Structure_Design.cpp */,
+				8D6348D920879043008739E4 /* 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp */,
 				8D537ED2206BDFD100EBAEC9 /* 374_GuessNumberHigherOrLower.cpp */,
 				8D64A847207BAE9E0053479A /* 442_Find_All_Duplications_in_an_Array.cpp */,
 				8D64A849207BB9190053479A /* 485_Max_Consecutive_Ones.cpp */,
@@ -595,6 +598,7 @@
 				8DFFAC6C1CF1B1270027E2CC /* 89_Gray_Code.cpp in Sources */,
 				8D30BCA11CE0AD2900F79D18 /* 51_N_Queens.cpp in Sources */,
 				8D64A84C207D0D4B0053479A /* 146_LRUCache.cpp in Sources */,
+				8D6348DA20879043008739E4 /* 235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree.cpp in Sources */,
 				8D1CFF7D1CD264EC007D100B /* 35_Search_Insert_Position.cpp in Sources */,
 				8DB4CB011D16F4CC00409240 /* 165_Compare_Version_Numbers.cpp in Sources */,
 				8D30BCA81CE0D17D00F79D18 /* 54_Spiral_Matrix.cpp in Sources */,
